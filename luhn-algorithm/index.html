@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <meta name="HandheldFriendly" content="True">
+        <link rel="icon" sizes="192x192" href="/logo.jpg">
+
+        <!-- add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="icon" sizes="192x192" href="/logo.jpg">
+
+        <!-- add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Luhn Algorithm | Matthew Grove">
+        <link rel="apple-touch-icon-precomposed" href="/logo.jpg">
+
+        <!-- tile icon & colour for Windows 8 -->
+        <meta name="msapplication-TileImage" content="/logo.jpg">
+        <meta name="msapplication-TileColor" content="#d84315">
+
+        <title>Luhn Algorithm | Matthew Grove</title>
+        <meta name="description" content="Replication of the Luhn Algorithm - by Matthew Grove">
+        <!--<link rel="icon" href="/logo.jpg">-->
+
+        <!-- import Roboto (font) -->
+        <link href="/assets/roboto.css" rel="stylesheet">
+
+        <!-- import jQuery -->
+        <script src="/assets/jquery.min.js"></script>
+
+        <!-- import Material Design components & icons -->
+        <link href="/assets/material-components-web.min.css" rel="stylesheet">
+        <link href="/assets/material_icons.css" rel="stylesheet">
+        <script src="/assets/material-components-web.min.js"></script>
+
+        <!-- import local styling & scripts -->
+        <script src="script.js"></script>
+        <script src="/assets/global.js"></script>
+        <link href="style.css" rel="stylesheet">
+        <link href="/assets/global.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- content of navbar is included via jQuery -->
+        <aside class="navbar-insert mdc-drawer mdc-drawer--dismissible"></aside>
+
+        <div class="mdc-drawer-app-content">
+            <header class="mdc-top-app-bar app-bar" id="app-bar">
+                <div class="mdc-top-app-bar__row">
+                    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                        <a href="javascript:void(0);" class="demo-mensu material-icons mdc-top-app-bar__navigation-icon">menu</a>
+                        <span class="mdc-top-app-bar__title">Luhn Algorithm</span>
+                    </section>
+                </div>
+            </header>
+
+            <main class="main-content" id="main-content">
+                <div class="mdc-top-app-bar--fixed-adjust">
+                    <h1>Validate</h1>
+                    <!-- input field (in a container so that unwanted overflow from :before & :after is hidden) -->
+                    <div class="mdc-text-field-container">
+                        <div class="mdc-text-field mdc-text-field--outlined">
+                            <input type="number" id="tf-outlined" class="mdc-text-field__input">
+                            <label for="tf-outlined" class="mdc-floating-label ">Your Number</label>
+                            <div class="mdc-notched-outline">
+                                <svg>
+                                    <path class="mdc-notched-outline__path"/>
+                                </svg>
+                            </div>
+                            <div class="mdc-notched-outline__idle"></div>
+                        </div>
+                    </div>
+                    <!-- input field helper text -->
+                    <p class="mdc-text-field-helper-text" aria-hidden="true">
+                        Validate with the Luhn Algorithm
+                    </p>
+                    <!-- button to submit & check number with Luhn algorithm -->
+                    <button class="validation_button mdc-button mdc-button--outlined" onclick="checkNumber()">
+                        <i class="material-icons mdc-button__icon">check_circle_outline</i>
+                        Check
+                    </button>
+                    <!-- displays evaluation of number by Luhn algorithm -->
+                    <p id="validation_message"></p>
+
+                    <!-- link to source code on GitHub -->
+                    <a href="https://github.com/mgrove36/mgrove36.github.io/blob/master/luhn-algorithm/index.html" class="source-code-link mdc-fab mdc-fab--extended"></a>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
