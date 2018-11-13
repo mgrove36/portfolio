@@ -1,0 +1,52 @@
+/* implement colour theme on elements that don't have it applied by default */
+.mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label, .mdc-list-item--activated .mdc-list-item__text, .mdc-drawer .mdc-list-item--activated .mdc-list-item__graphic {
+   color: var(--mdc-theme-primary);
+}
+.mdc-fab {
+   background-color: var(--mdc-theme-secondary);
+}
+
+/* hide unwanted overflow from mdc-text-field :before & :after */
+.mdc-text-field-container {
+   overflow: hidden;
+}
+/* give space for mdc-text-field label to show properly when field is selected */
+.mdc-text-field {
+   margin-top: 5px;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   text-align: center;
+}
+.mdc-text-field-helper-text {
+   margin-bottom: 10px;
+}
+.source-code-link {
+   position: fixed;
+   bottom: 15px;
+   right: 25px;
+}
+
+/* for MDC navbar */
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.mdc-drawer-app-content {
+    flex: auto;
+    overflow: auto;
+}
+
+.main-content {
+    overflow: auto;
+}
+
+.app-bar {
+    position: absolute;
+}
+.main-content {
+    margin-top: 20px;
+}
