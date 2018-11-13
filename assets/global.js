@@ -19,25 +19,25 @@ $(document).ready(function(){
         for (const button of mdc_buttons) {
             mdc.ripple.MDCRipple.attachTo(button);
         }
-        
+
         // initiate FABs
         const mdc_fabs = document.querySelectorAll('.mdc-fab');
         for (const fab of mdc_fabs) {
             mdc.ripple.MDCRipple.attachTo(fab);
         }
-        
+
         // initiate text fields
         const mdc_text_fields = document.querySelectorAll('.mdc-text-field');
         for (const text_field of mdc_text_fields) {
             mdc.textField.MDCTextField.attachTo(text_field);
         }
-        
+
         // initiate helper texts
         const mdc_helper_texts = document.querySelectorAll(".mdc-text-field-helper-text");
         for (const helper_text of mdc_helper_texts) {
-            mdc.textFieldHelperText.MDCTextFieldHelperText.attachTo(helper_text);
+            mdc.textField.MDCHelperText.attachTo(helper_text);
         }
-        
+
         var drawer_item_link_query_selector = ".mdc-list-item[href='" + window.activated_drawer_item_link;
         $(drawer_item_link_query_selector + "']").addClass("mdc-list-item--activated");
         $(drawer_item_link_query_selector + "']").attr("aria-selected", "true");
