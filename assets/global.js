@@ -2,14 +2,20 @@ $(document).ready(function(){
     // include navbar
     $(".navbar-insert").load("/page-inserts/navbar.html", function(){
         // initiate MDC drawer
-        const drawer = new mdc.drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
+        // const drawer = new mdc.drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
 
-        // initiate MDC top app bar
-        const mdc_top_app_bar = new mdc.topAppBar.MDCTopAppBar.attachTo(document.querySelector('.mdc-top-app-bar'));
-        mdc_top_app_bar.setScrollTarget(document.getElementById('main-content'));
-        mdc_top_app_bar.listen('MDCTopAppBar:nav', () => {
+        const drawer = mdc.drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
+        const topAppBar = mdc.topAppBar.MDCTopAppBar.attachTo(document.getElementById('app-bar'));
+        topAppBar.listen('MDCTopAppBar:nav', () => {
             drawer.open = !drawer.open;
         });
+
+        // initiate MDC top app bar
+        // const mdc_top_app_bar = new mdc.topAppBar.MDCTopAppBar.attachTo(document.querySelector('.mdc-top-app-bar'));
+        // mdc_top_app_bar.setScrollTarget(document.getElementById('main-content'));
+        // mdc_top_app_bar.listen('MDCTopAppBar:nav', () => {
+        //     drawer.open = !drawer.open;
+        // });
 
         // include source code link
         $(".source-code-link").load("/page-inserts/source-code-link.html");
