@@ -14,7 +14,7 @@ $(document).ready(function(){
         // include source code link
         $(".source-code-link").load("/page-inserts/source-code-link.html");
 
-        // initiate MDC buttons
+        // initiate MDC items
         mdc.autoInit();
 
         var drawer_item_link_query_selector = ".mdc-list-item[href='" + window.activated_drawer_item_link;
