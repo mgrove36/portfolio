@@ -1,4 +1,4 @@
-window.activated_drawer_item_link = "/luhn-algorithm/";
+window.activated_drawer_item_link = "/luhn-algorithm";
 
 document.addEventListener("keyup", function(event) {
     // stop any code that may normally run when enter key pressed
@@ -25,7 +25,7 @@ function checkNumber() {
         }
         sum += newDigit;
     });
-    
+
     // displays evaluation message
     $("#validation_message").html(((sum % 10) == 0) ? "Number is valid" : "Number is invalid");
 }
