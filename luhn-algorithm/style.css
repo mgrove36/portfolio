@@ -1,0 +1,7 @@
+:root {
+    --mdc-theme-primary: #00897b;
+    --mdc-theme-secondary: #d84315;
+}
+.mdc-text-field-helper-text {
+    margin-bottom: 10px;
+}
