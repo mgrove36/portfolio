@@ -1,5 +1,3 @@
-window.activated_drawer_item_link = "/luhn-algorithm";
-
 document.addEventListener("keyup", function(event) {
     // stop any code that may normally run when enter key pressed
     event.preventDefault();

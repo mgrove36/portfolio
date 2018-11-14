@@ -48,14 +48,7 @@
         <div class="mdc-drawer-scrim"></div>
 
         <div class="mdc-drawer-app-content">
-            <header class="mdc-top-app-bar app-bar" id="app-bar">
-                <div class="mdc-top-app-bar__row">
-                    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                        <a href="javascript:void(0);" class="demo-mensu material-icons mdc-top-app-bar__navigation-icon">menu</a>
-                        <span class="mdc-top-app-bar__title">Luhn Algorithm</span>
-                    </section>
-                </div>
-            </header>
+            <header class="mdc-top-app-bar app-bar" id="app-bar"></header>
 
             <main class="main-content" id="main-content">
                 <div class="mdc-top-app-bar--fixed-adjust">
@@ -72,11 +65,11 @@
                             </div>
                             <div class="mdc-notched-outline__idle"></div>
                         </div>
+                        <!-- input field helper text -->
+                        <p class="mdc-text-field-helper-text" aria-hidden="true">
+                            Validate with the Luhn Algorithm
+                        </p>
                     </div>
-                    <!-- input field helper text -->
-                    <p class="mdc-text-field-helper-text" aria-hidden="true">
-                        Validate with the Luhn Algorithm
-                    </p>
                     <!-- button to submit & check number with Luhn algorithm -->
                     <button class="validation_button mdc-button mdc-button--outlined" onclick="checkNumber()" data-mdc-auto-init="MDCRipple">
                         <i class="material-icons mdc-button__icon">check_circle_outline</i>
