@@ -33,6 +33,9 @@ body {
    bottom: 15px;
    right: 25px;
 }
+a {
+    color: var(--mdc-theme-secondary);
+}
 
 /* for MDC navbar */
 body {
