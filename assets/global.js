@@ -34,10 +34,10 @@ $(document).ready(function(){
     });
     /* for cookie notice */
     $("#cookies").addClass("display");
-    $(".source-code-link").animate({bottom: "+100px";}, 1000);
+    $(".source-code-link").animate({bottom: "+100px"}, 1000);
     $("#close-cookies").click(function(){
         event.preventDefault();
         $("#cookies").addClass("close-cookies");
-        $(".source-code-link").animate({bottom: "-100px";}, 1000);
+        $(".source-code-link").animate({bottom: "-100px"}, 1000);
     });
 });
