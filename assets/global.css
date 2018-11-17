@@ -57,6 +57,7 @@ body {
     display: none;
     width: 100%;
     height: 70px;
+    padding-top: 30px;
     position: fixed;
     background: var(--mdc-theme-primary);
     color: var(--mdc-theme-background);
@@ -66,12 +67,7 @@ body {
     z-index: 9999;
 }
 
-  #cookies > p {
-    margin: 0 0 10px 0;
-    font-weight: bold;
-}
-
-  #cookies > p a {
+  #cookies p a {
     color: var(--mdc-theme-secondary);
     text-decoration: none;
 }
