@@ -57,7 +57,7 @@ body {
     display: none;
     width: 100%;
     height: 70px;
-    position: absolute;
+    position: fixed;
     background: --mdc-theme-primary;
     color: --mdc-theme-background;
     text-align: center;
