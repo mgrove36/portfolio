@@ -40,9 +40,11 @@ $(document).ready(function(){
             $(".source-code-link").animate({bottom: "+100px"}, 1000);
             $("#close-cookies").click(function(){
                 event.preventDefault();
-                $("#cookies").animate({bottom: "0px"}, 1000);
+                // $("#cookies").animate({bottom: "0px"}, 1000);
+                $("#cookies").removeAttr("style");
                 $("#cookies").hide();
-                $(".source-code-link").animate({bottom: "0px"}, 1000);
+                $(".source-code-link").removeAttr("style");
+                // $(".source-code-link").animate({bottom: "0px"}, 1000);
                 Cookies.set("demo.matthew-grove.ml-cookies-accepted", "true", {expires: 30});
             });
         });
