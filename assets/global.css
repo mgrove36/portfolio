@@ -58,8 +58,8 @@ body {
     width: 100%;
     height: 70px;
     position: fixed;
-    background: --mdc-theme-primary;
-    color: --mdc-theme-background;
+    background: var(--mdc-theme-primary);
+    color: var(--mdc-theme-background);
     text-align: center;
     bottom: -100px;
     left: 0;
@@ -72,6 +72,6 @@ body {
 }
 
   #cookies > p a {
-    color: #--mdc-theme-secondary;
+    color: var(--mdc-theme-secondary);
     text-decoration: none;
 }
