@@ -41,7 +41,7 @@ $(document).ready(function(){
             $("#close-cookies").click(function(){
                 event.preventDefault();
                 $("#cookies").animate({bottom: "-100px"}, 1000);
-                $("#cookies").hide();
+                setTimeout()$("#cookies").hide(),1000);
                 $(".source-code-link").animate({bottom: "15px"}, 1000);
                 Cookies.set("demo.matthew-grove.ml-cookies-accepted", "true", {expires: 30});
             });
