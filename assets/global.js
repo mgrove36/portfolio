@@ -33,13 +33,16 @@ $(document).ready(function(){
         });
     });
     // include cookie notice
-    $("#cookies").load("/page-inserts/cookie-notice.html", function(){
-        $("#cookies").addClass("display");
-        $(".source-code-link").animate({bottom: "+100px"}, 1000);
-        $("#close-cookies").click(function(){
-            event.preventDefault();
-            $("#cookies").addClass("close-cookies");
-            $(".source-code-link").animate({bottom: "0px"}, 1000);
+    if(!Cookies.get("demo.matthew-grove.ml-cookies-accepted")) {
+        $("#cookies").load("/page-inserts/cookie-notice.html", function(){
+            $("#cookies").addClass("display");
+            $(".source-code-link").animate({bottom: "+100px"}, 1000);
+            $("#close-cookies").click(function(){
+                event.preventDefault();
+                $("#cookies").addClass("close-cookies");
+                $(".source-code-link").animate({bottom: "0px"}, 1000);
+                Cookies.set("demo.matthew-grove.ml-cookies-accepted", "true", {expires: 30});
+            });
         });
-    });
+    }
 });
