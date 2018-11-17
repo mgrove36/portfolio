@@ -33,7 +33,7 @@ $(document).ready(function(){
         });
     });
     // include cookie notice
-    if(!(Cookies.get("demo.matthew-grove.ml-cookies-accepted"))) {
+    if(Cookies.get("demo.matthew-grove.ml-cookies-accepted") != "true") {
         $("#cookies").load("/page-inserts/cookie-notice.html", function(){
             $("#cookies").show();
             $("#cookies").animate({bottom: "+100px"}, 1000);
