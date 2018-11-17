@@ -39,7 +39,7 @@ $(document).ready(function(){
         $("#close-cookies").click(function(){
             event.preventDefault();
             $("#cookies").addClass("close-cookies");
-            $(".source-code-link").animate({bottom: "-100px"}, 1000);
+            $(".source-code-link").animate({bottom: "0px"}, 1000);
         });
     });
 });
