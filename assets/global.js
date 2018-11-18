@@ -30,6 +30,8 @@ $(document).ready(function(){
             $(drawer_item_link_query_selector + "']").attr("aria-selected", "true");
             $(drawer_item_link_query_selector + "/']").addClass("mdc-list-item--activated");
             $(drawer_item_link_query_selector + "/']").attr("aria-selected", "true");
+            $(drawer_item_link_query_selector + "/index.html']").addClass("mdc-list-item--activated");
+            $(drawer_item_link_query_selector + "/index.html']").attr("aria-selected", "true");
         });
     });
     // include cookie notice
