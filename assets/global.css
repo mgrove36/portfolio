@@ -56,8 +56,8 @@ body {
 .app-bar {
     position: absolute;
 }
-.main-content {
-    margin-top: 20px;
+.main-content, footer {
+    margin: 20px;
 }
 
 /* for cookie notice */
