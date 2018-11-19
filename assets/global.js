@@ -24,7 +24,10 @@ $(document).ready(function(){
             if (drawer_item_link_query_selector.substring(drawer_item_link_query_selector.length - 1) == "/") {
                 drawer_item_link_query_selector = drawer_item_link_query_selector.substring(0,drawer_item_link_query_selector.length - 1);
             }
-
+            
+            // display title
+            $(".mdc-top-app-bar__title").html(window.page_title);
+            
             // give 'seleted' styling to correct item on navbar
             $(drawer_item_link_query_selector + "']").addClass("mdc-list-item--activated");
             $(drawer_item_link_query_selector + "']").attr("aria-selected", "true");
