@@ -1,3 +1,6 @@
+// set page title
+window.page_title = "Luhn Algorithm | Matthew Grove";
+
 document.addEventListener("keyup", function(event) {
     // stop any code that may normally run when enter key pressed
     event.preventDefault();
