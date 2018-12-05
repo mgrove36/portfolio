@@ -1,5 +1,6 @@
 // set page title
 window.page_title = "Computer Science Blog | Matthew Grove";
+
 window.onload = function() {
 	// set the current date
     var date = new Date();
@@ -11,12 +12,7 @@ window.onload = function() {
     var current_date = day + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
 	
 	// display date
-    $("#current_date").html(current_date);
-    
-    // include navbar
-    $(".blog-insert").load("pages/blog.html", function(){
-        
-    });
+    document.getElementById("current_date").innerHTML = current_date;
 }
 
 function nextPage() {
