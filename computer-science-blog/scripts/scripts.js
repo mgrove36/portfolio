@@ -16,7 +16,7 @@ window.onload = function() {
 }
 
 function nextPage() {
-	
+	displayPage(pages[0]);
 }
 
 function previousPage() {
