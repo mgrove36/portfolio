@@ -1,7 +1,14 @@
 /* Reading School 2018, CSS*/
-iframe {
+.carousel-inner .item {
+	height: 100%;
+}
+.carousel-inner iframe {
 	width: 100%;
 	border: none;
+	height: 100%;
+}
+.carousel-indicators {
+	background: black;
 }
 .mdc-top-app-bar--fixed-adjust {
 	text-align: left;

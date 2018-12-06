@@ -26,39 +26,35 @@ function displayPage(page) {
 	$("#presentation").load(page);
 }
 
-var pages = ["page_01", "page_02", "page_03"];
-var pageIndex = 0;
-
 window.onload = function() {
-	
 	// set the current date
     var date = new Date();
 
     // ternary operator: if the date < 10 then add 0 to the start of it, else display the date
     var day = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
-	
+
 	// set current date
     var current_date = day + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
-	
+
 	// display date
     $("#current_date").html(current_date);
-	
+
 	// define variables for blog pages
-	window.pages = [];
+	pages = ["pages/page_1.html"];
 	var page_exists = true;
 	var page_number = 1;
 	// gets all blog pages and add them to an array (pages[])
-	// while (page_exists) {
-		// var page = "pages/page_" + page_number + ".html";
-		// $.get("pages/page_" + page_number + ".html").done(function() {
-			// window.pages.append(page);
-		// }).fail(function() {
-			// page_exists = false;
-		// });
-		// page_number ++;
-	// }
+	pages.forEach(function(item, index) {
+		if (index == 0) {
+			$(".carousel-inner").append('<div class="item active"><iframe src="' + item + '"></iframe></div>');
+			$(".carousel-indicators").append('<li data-target="#presentation" class="active" data-slide-to="' + index + '"></li>')
+		} else {
+			$(".carousel-inner").append('<div class="item"><iframe src="' + item + '"></iframe></div>');
+			$(".carousel-indicators").append('<li data-target="#presentation" data-slide-to="' + index + '"></li>')
+		}
+	});
+
 	// displays first blog page
 	window.current_blog_page = 0;
-	// $("#presentation").load(window.pages[window.current_blog_page]);
 	$("#blog-insert").load("pages/blog.html");
 }
