@@ -59,6 +59,6 @@ window.onload = function() {
 	// }
 	// displays first blog page
 	window.current_blog_page = 0;
-	$("#presentation").load(window.pages[window.current_blog_page]);
+	// $("#presentation").load(window.pages[window.current_blog_page]);
 	$("#blog-insert").load("pages/blog.html");
 }
