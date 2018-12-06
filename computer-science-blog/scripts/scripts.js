@@ -48,15 +48,15 @@ window.onload = function() {
 	var page_exists = true;
 	var page_number = 1;
 	// gets all blog pages and add them to an array (pages[])
-	while (page_exists) {
-		var page = "pages/page_" + page_number + ".html";
-		$.get("pages/page_" + page_number + ".html").done(function() { 
-			window.pages.append(page);
-		}).fail(function() {
-			page_exists = false;
-		});
-		page_number ++;
-	}
+	// while (page_exists) {
+		// var page = "pages/page_" + page_number + ".html";
+		// $.get("pages/page_" + page_number + ".html").done(function() {
+			// window.pages.append(page);
+		// }).fail(function() {
+			// page_exists = false;
+		// });
+		// page_number ++;
+	// }
 	// displays first blog page
 	window.current_blog_page = 0;
 	$("#presentation").load(window.pages[window.current_blog_page]);
