@@ -39,22 +39,32 @@ window.onload = function() {
 	// display date
     $("#current_date").html(current_date);
 
-	// define variables for blog pages
-	pages = ["pages/page_1.html"];
-	var page_exists = true;
-	var page_number = 1;
-	// gets all blog pages and add them to an array (pages[])
-	pages.forEach(function(item, index) {
+	// define variables for HTTP presentation pages
+	http_pages = ["pages/hyperlinks.html"];
+	// displays HTTP presentation pages
+	http_pages.forEach(function(item, index) {
 		if (index == 0) {
-			$(".carousel-inner").append('<div class="item active"><iframe src="' + item + '"></iframe></div>');
-			$(".carousel-indicators").append('<li data-target="#presentation" class="active" data-slide-to="' + index + '"></li>')
+			$("#http_presentation .carousel-inner").append('<div class="item active"><iframe src="' + item + '"></iframe></div>');
+			$("#http_presentation .carousel-indicators").append('<li data-target="#http_presentation" class="active" data-slide-to="' + index + '"></li>')
 		} else {
-			$(".carousel-inner").append('<div class="item"><iframe src="' + item + '"></iframe></div>');
-			$(".carousel-indicators").append('<li data-target="#presentation" data-slide-to="' + index + '"></li>')
+			$("#http_presentation .carousel-inner").append('<div class="item"><iframe src="' + item + '"></iframe></div>');
+			$("#http_presentation .carousel-indicators").append('<li data-target="#http_presentation" data-slide-to="' + index + '"></li>')
 		}
 	});
+	
+   	// define variables for HTML presentation pages
+   	html_pages = ["pages/page_1.html"];
+   	// displays HTML presentation pages
+   	html_pages.forEach(function(item, index) {
+   		if (index == 0) {
+   			$("#html_presentation .carousel-inner").append('<div class="item active"><iframe src="' + item + '"></iframe></div>');
+   			$("#html_presentation .carousel-indicators").append('<li data-target="#html_presentation" class="active" data-slide-to="' + index + '"></li>')
+   		} else {
+   			$("#html_presentation .carousel-inner").append('<div class="item"><iframe src="' + item + '"></iframe></div>');
+   			$("#html_presentation .carousel-indicators").append('<li data-target="#html_presentation" data-slide-to="' + index + '"></li>')
+   		}
+   	});
 
 	// displays first blog page
-	window.current_blog_page = 0;
 	$("#blog-insert").load("pages/blog.html");
 }

@@ -1,7 +1,9 @@
-/* change them */
 :root {
+    /* change theme */
     --mdc-theme-primary: #00adb4;
     --mdc-theme-secondary: #d84315;
+    /* ensure Bootstrap doesn't alter any font sizes set in rem */
+    font-size: initial;
 }
 
 /* implement colour theme on elements that don't have it applied by default */
@@ -10,6 +12,9 @@
 }
 .mdc-fab {
    background-color: var(--mdc-theme-secondary);
+}
+.material-icons:hover {
+    text-decoration: none;
 }
 
 /* hide unwanted overflow from mdc-text-field :before & :after */
