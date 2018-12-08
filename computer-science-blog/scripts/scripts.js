@@ -18,7 +18,7 @@ window.onload = function() {
 	$("#blog-insert").load("pages/blog.html");
 
 	// define variables for HTTP presentation pages
-	http_pages = ["hyperlinks", "http", "https", "cookies"];
+	var http_pages = ["hyperlinks", "http", "https", "cookies"];
 	// displays HTTP presentation pages
 	http_pages.forEach(function(item, index) {
 		$.get("pages/" + item + ".html", function(content) {
@@ -33,17 +33,17 @@ window.onload = function() {
 	});
 
    	// define variables for HTML presentation pages
-   	html_pages = ["html", "css", "js"];
+   	var html_pages = ["html", "css", "js"];
    	// displays HTML presentation pages
    	html_pages.forEach(function(item, index) {
    		$.get("pages/" + item + ".html", function(content) {
-	   		if (index == 0) {
-	   			$("#html_presentation .carousel-inner").append('<div class="item active">' + content + '</div>');
-	   			$("#html_presentation .carousel-indicators").append('<li data-target="#html_presentation" class="active" data-slide-to="' + index + '"></li>')
-	   		} else {
-	   			$("#html_presentation .carousel-inner").append('<div class="item">' + content + '</div>');
-	   			$("#html_presentation .carousel-indicators").append('<li data-target="#html_presentation" data-slide-to="' + index + '"></li>')
-	   		}
+            if (index == 0) {
+				$("#html_presentation .carousel-inner").append('<div class="item active">' + content + '</div>');
+				$("#html_presentation .carousel-indicators").append('<li data-target="#html_presentation" class="active" data-slide-to="' + index + '"></li>')
+			} else {
+				$("#html_presentation .carousel-inner").append('<div class="item">' + content + '</div>');
+				$("#html_presentation .carousel-indicators").append('<li data-target="#html_presentation" data-slide-to="' +  index + '"></li>')
+			}
    		});
    	});
 }
