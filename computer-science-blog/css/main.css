@@ -6,6 +6,12 @@
     margin-bottom: 15px;
     background: rgba(10,10,10,0.2);
 }
+.presentation-image {
+	width: 70%;
+	box-shadow: 3px 3px 6px 2px rgba(10,10,10,0.5);
+	margin: 10px;
+	border-radius: 6px;
+}
 
 /* place carousel indicators between the two buttons (next & previous) */
 .presentation-flexbox {
@@ -54,6 +60,9 @@ p {
 	margin: 0;
 	position: initial;
 	width: auto;
+}
+.carousel h1, .carousel h2, .carousel h3, .carousel .h1, .carousel .h2, .carousel .h3 {
+	margin-top: 0;
 }
 
 /* add side margins depending on screen size */
