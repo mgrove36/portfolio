@@ -6,25 +6,39 @@
     margin-bottom: 15px;
     background: rgba(10,10,10,0.2);
 }
+
+/* place carousel indicators between the two buttons (next & previous) */
+.presentation-flexbox {
+  	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+
+  	-webkit-flex-flow: row wrap;
+  	flex-flow: row wrap;
+	justify-content: space-between;
+}
+.carousel-indicators {
+	order: 1;
+	margin-bottom: 0;
+}
+.presentation-button-left {
+	order: 0;
+}
+.presentation-button-right {
+	order: 2;
+}
+
 .carousel-inner .item {
-	height: 100%;
+	padding: 15px;
 }
-.carousel-inner div {
-	width: 100%;
-	border: none;
-	height: 100%;
-}
+
 .carousel-indicators li {
 	border: 1px solid var(--mdc-theme-secondary);
 }
 .carousel-indicators .active {
 	background-color: var(--mdc-theme-secondary);
-}
-.presentation-button-left {
-	float: left;
-}
-.presentation-button-right {
-	float: right;
 }
 /* ensure content below buttons doesn't cover them */
 .presentation-buttons-container {
@@ -35,6 +49,11 @@
 /* revert changes made by Bootstrap */
 p {
 	margin: 0;
+}
+.carousel-indicators {
+	margin: 0;
+	position: initial;
+	width: auto;
 }
 
 /* add side margins depending on screen size */
