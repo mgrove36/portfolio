@@ -1,11 +1,11 @@
 /* Reading School 2018, CSS*/
 .carousel-inner {
-	height: 500px;
+	height: 250px;
 }
 .carousel-inner .item {
 	height: 100%;
 }
-.carousel-inner iframe {
+.carousel-inner div {
 	width: 100%;
 	border: none;
 	height: 100%;
@@ -22,6 +22,13 @@
 .presentation-button-right {
 	float: right;
 }
+/* ensure content below buttons doesn't cover them */
+.presentation-buttons-container {
+	width: 100%;
+	min-height: 32px;
+}
+
+/* add side margins depending on screen size */
 #main-content {
 	text-align: left;
 	margin: 20px 15%;

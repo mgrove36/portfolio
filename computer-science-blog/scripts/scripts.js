@@ -40,29 +40,33 @@ window.onload = function() {
     $("#current_date").html(current_date);
 
 	// define variables for HTTP presentation pages
-	http_pages = ["pages/hyperlinks.html"];
+	http_pages = ["hyperlinks", "http", "https", "cookies"];
 	// displays HTTP presentation pages
 	http_pages.forEach(function(item, index) {
-		if (index == 0) {
-			$("#http_presentation .carousel-inner").append('<div class="item active"><iframe src="' + item + '"></iframe></div>');
-			$("#http_presentation .carousel-indicators").append('<li data-target="#http_presentation" class="active" data-slide-to="' + index + '"></li>')
-		} else {
-			$("#http_presentation .carousel-inner").append('<div class="item"><iframe src="' + item + '"></iframe></div>');
-			$("#http_presentation .carousel-indicators").append('<li data-target="#http_presentation" data-slide-to="' + index + '"></li>')
-		}
+		$.get("pages/" + item + ".html", function(content) {
+			if (index == 0) {
+				$("#http_presentation .carousel-inner").append('<div class="item active">' + content + '</div>');
+				$("#http_presentation .carousel-indicators").append('<li data-target="#http_presentation" class="active" data-slide-to="' + index + '"></li>')
+			} else {
+				$("#http_presentation .carousel-inner").append('<div class="item">' + content + '</div>');
+				$("#http_presentation .carousel-indicators").append('<li data-target="#http_presentation" data-slide-to="' + index + '"></li>')
+			}
+		});
 	});
 	
    	// define variables for HTML presentation pages
-   	html_pages = ["pages/page_1.html"];
+   	html_pages = ["page"];
    	// displays HTML presentation pages
    	html_pages.forEach(function(item, index) {
-   		if (index == 0) {
-   			$("#html_presentation .carousel-inner").append('<div class="item active"><iframe src="' + item + '"></iframe></div>');
-   			$("#html_presentation .carousel-indicators").append('<li data-target="#html_presentation" class="active" data-slide-to="' + index + '"></li>')
-   		} else {
-   			$("#html_presentation .carousel-inner").append('<div class="item"><iframe src="' + item + '"></iframe></div>');
-   			$("#html_presentation .carousel-indicators").append('<li data-target="#html_presentation" data-slide-to="' + index + '"></li>')
-   		}
+   		$.get("pages/" + item + ".html", function(content) {
+	   		if (index == 0) {
+	   			$("#html_presentation .carousel-inner").append('<div class="item active">' + content + '</div>');
+	   			$("#html_presentation .carousel-indicators").append('<li data-target="#html_presentation" class="active" data-slide-to="' + index + '"></li>')
+	   		} else {
+	   			$("#html_presentation .carousel-inner").append('<div class="item">' + content + '</div>');
+	   			$("#html_presentation .carousel-indicators").append('<li data-target="#html_presentation" data-slide-to="' + index + '"></li>')
+	   		}
+   		});
    	});
 
 	// displays first blog page

@@ -10,12 +10,6 @@
 .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label, .mdc-list-item--activated .mdc-list-item__text, .mdc-drawer .mdc-list-item--activated .mdc-list-item__graphic {
    color: var(--mdc-theme-primary);
 }
-.mdc-fab {
-   background-color: var(--mdc-theme-secondary);
-}
-.material-icons:hover {
-    text-decoration: none;
-}
 
 /* hide unwanted overflow from mdc-text-field :before & :after */
 .mdc-text-field-container {
@@ -65,8 +59,22 @@ body {
     margin: 20px;
 }
 
-/* for cookie notice */
+/* ensure that buttons' colours don't change on hover and background colour changes are animated */
+.mdc-button:hover, .mdc-fab:hover, .material-icons:hover, .mdc-button:focus, .mdc-fab:focus, .material-icons:focus {
+    text-decoration: none;
+    transition: background-color 0.75s;
+}
+.mdc-button:hover {
+    color: var(--mdc-theme-primary);
+}
+.mdc-fab:hover {
+    color: #fff;
+}
+.mdc-fab::before, .mdc-top-app-bar__action-item::before, .mdc-top-app-bar__navigation-icon::before {
+    transition-duration: 0.15s;
+}
 
+/* for cookie notice */
 #cookies {
     display: none;
     width: 100%;
