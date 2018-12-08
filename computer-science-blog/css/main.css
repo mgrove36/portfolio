@@ -1,6 +1,10 @@
 /* Reading School 2018, CSS*/
 .carousel-inner {
 	height: 250px;
+	border-radius: 4px;
+    overflow: hidden auto;
+    margin-bottom: 15px;
+    background: rgba(10,10,10,0.2);
 }
 .carousel-inner .item {
 	height: 100%;
@@ -26,6 +30,11 @@
 .presentation-buttons-container {
 	width: 100%;
 	min-height: 32px;
+}
+
+/* revert changes made by Bootstrap */
+p {
+	margin: 0;
 }
 
 /* add side margins depending on screen size */
