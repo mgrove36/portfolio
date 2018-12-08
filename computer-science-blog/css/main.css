@@ -21,7 +21,6 @@
 }
 .carousel-indicators {
 	order: 1;
-	margin-bottom: 0;
 }
 .presentation-button-left {
 	order: 0;
@@ -36,6 +35,7 @@
 
 .carousel-indicators li {
 	border: 1px solid var(--mdc-theme-secondary);
+	margin-top: 12px;
 }
 .carousel-indicators .active {
 	background-color: var(--mdc-theme-secondary);
