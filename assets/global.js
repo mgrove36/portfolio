@@ -8,7 +8,7 @@ $(document).ready(function() {
         $(".mdc-top-app-bar").load("/page-inserts/top-app-bar.html", function(){
             // initiate MDC top app bar
             const mdc_top_app_bar = new mdc.topAppBar.MDCTopAppBar.attachTo(document.querySelector('.mdc-top-app-bar'));
-            mdc_top_app_bar.setScrollTarget(document.getElementById('main-content'));
+            // mdc_top_app_bar.setScrollTarget(document.getElementById('main-content'));
             mdc_top_app_bar.listen('MDCTopAppBar:nav', () => {
                 drawer.open = !drawer.open;
             });

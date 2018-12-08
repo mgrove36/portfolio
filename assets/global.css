@@ -52,9 +52,6 @@ body {
     overflow: auto;
 }
 
-.app-bar {
-    position: absolute;
-}
 .main-content, footer {
     margin: 20px;
 }
