@@ -46,25 +46,25 @@ window.onload = function() {
 		$.get("pages/" + item + ".html", function(content) {
 			if (index == 0) {
 				$("#http_presentation .carousel-inner").append('<div class="item active">' + content + '</div>');
-				$("#http_presentation .carousel-indicators").append('<li data-target="#http_presentation" class="active" data-slide-to="' + index + '"></li>')
+				$("#http_presentation .carousel-indicators").append('<li data-target="#http_presentation" class="active" data-slide-to="' + http_pages.indexOf(item) + '"></li>')
 			} else {
 				$("#http_presentation .carousel-inner").append('<div class="item">' + content + '</div>');
-				$("#http_presentation .carousel-indicators").append('<li data-target="#http_presentation" data-slide-to="' + index + '"></li>')
+				$("#http_presentation .carousel-indicators").append('<li data-target="#http_presentation" data-slide-to="' +  http_pages.indexOf(item) + '"></li>')
 			}
 		});
 	});
-	
+
    	// define variables for HTML presentation pages
-   	html_pages = ["page"];
+   	html_pages = ["html", "css", "js"];
    	// displays HTML presentation pages
    	html_pages.forEach(function(item, index) {
    		$.get("pages/" + item + ".html", function(content) {
 	   		if (index == 0) {
 	   			$("#html_presentation .carousel-inner").append('<div class="item active">' + content + '</div>');
-	   			$("#html_presentation .carousel-indicators").append('<li data-target="#html_presentation" class="active" data-slide-to="' + index + '"></li>')
+	   			$("#html_presentation .carousel-indicators").append('<li data-target="#html_presentation" class="active" data-slide-to="' + html_pages.indexOf(item) + '"></li>')
 	   		} else {
 	   			$("#html_presentation .carousel-inner").append('<div class="item">' + content + '</div>');
-	   			$("#html_presentation .carousel-indicators").append('<li data-target="#html_presentation" data-slide-to="' + index + '"></li>')
+	   			$("#html_presentation .carousel-indicators").append('<li data-target="#html_presentation" data-slide-to="' + html_pages.indexOf(item) + '"></li>')
 	   		}
    		});
    	});
