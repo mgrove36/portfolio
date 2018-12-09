@@ -1,0 +1,12 @@
+html, body {
+    font-family: 'Roboto';
+    background: transparent;
+}
+
+/* revert changes made by Bootstrap */
+p {
+	margin: 0;
+}
+h1, h2, h3, .h1, .h2, .h3 {
+	margin-top: 0;
+}

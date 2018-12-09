@@ -36,6 +36,9 @@
 }
 
 .carousel-inner .item {
+	height: 100%;
+	width: 100%;
+	border: none;
 	padding: 15px;
 }
 
@@ -46,23 +49,12 @@
 .carousel-indicators .active {
 	background-color: var(--mdc-theme-secondary);
 }
-/* ensure content below buttons doesn't cover them */
-.presentation-buttons-container {
-	width: 100%;
-	min-height: 32px;
-}
 
 /* revert changes made by Bootstrap */
-p {
-	margin: 0;
-}
 .carousel-indicators {
 	margin: 0;
 	position: initial;
 	width: auto;
-}
-.carousel h1, .carousel h2, .carousel h3, .carousel .h1, .carousel .h2, .carousel .h3 {
-	margin-top: 0;
 }
 
 /* add side margins depending on screen size */
