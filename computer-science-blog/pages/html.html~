@@ -28,9 +28,8 @@
             <br>
             <code>&lt;img src="image_source_url"&gt;</code>
             <br>
-            A comment in HTML is started with <code>&lt;!--</code> and ended with <code>--&gt;</code>.
-            <br>
-            HTML is closely linked with CSS and JavaScript.
+            HTML is closely linked with CSS and JavaScript; a comment in HTML is started with
+            <code>&lt;!--</code> and ended with <code>--&gt;</code>.
         </p>
 	</body>
 </html>
