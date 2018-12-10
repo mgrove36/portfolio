@@ -50,6 +50,7 @@
 	margin: 0;
 	position: initial;
 	width: auto;
+	z-index: inherit;
 }
 
 /* add side margins depending on screen size */
