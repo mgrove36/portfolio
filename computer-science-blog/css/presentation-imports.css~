@@ -2,12 +2,6 @@ html, body {
     font-family: 'Roboto';
     background: transparent;
 }
-img {
-	width: 70%;
-	box-shadow: 3px 3px 6px 2px rgba(10,10,10,0.5);
-	margin: 10px;
-	border-radius: 6px;
-}
 
 /* revert changes made by Bootstrap */
 p {
@@ -15,4 +9,10 @@ p {
 }
 h1, h2, h3, .h1, .h2, .h3 {
 	margin-top: 0;
+}
+img {
+	width: 70%;
+	box-shadow: 3px 3px 6px 2px rgba(10,10,10,0.5);
+	margin: 10px;
+	border-radius: 6px;
 }
