@@ -74,25 +74,27 @@
                <div class="mdc-top-app-bar--fixed-adjust">
                    <p>The current date is <span id="current_date">unknown</span>.</p>
 					<h1>HTTP Introduction</h1>
-                    <div id="http_presentation" class="carousel slide" data-interval="false" data-ride="carousel">
-                       <!-- Wrapper for slides -->
-                       <div class="carousel-inner">
+                    <div class="presentation-container">
+                        <div id="http_presentation" class="carousel slide" data-interval="false" data-ride="carousel">
+                           <!-- Wrapper for slides -->
+                           <div class="carousel-inner">
+                           </div>
+                           <div class="presentation-flexbox">
+                              <!-- Indicators -->
+                              <ol class="carousel-indicators">
+                              </ol>
+                              <!-- button to go to previous slide -->
+                              <button class="presentation-button-left mdc-button mdc-button--outlined" href="#http_presentation" data-slide="prev" data-mdc-auto-init="MDCRipple">
+                                  <i class="material-icons mdc-button__icon">navigate_before</i>
+                                  Previous
+                              </button>
+                              <!-- button to go to next slide -->
+                              <button class="presentation-button-right mdc-button mdc-button--outlined" href="#http_presentation" data-slide="next" data-mdc-auto-init="MDCRipple">
+                                  Next
+                                  <i class="material-icons mdc-button__icon">navigate_next</i>
+                               </button>
+                           </div>
                        </div>
-                       <div class="presentation-flexbox">
-                          <!-- Indicators -->
-                          <ol class="carousel-indicators">
-                          </ol>
-                          <!-- button to go to previous slide -->
-                          <button class="presentation-button-left mdc-button mdc-button--outlined" href="#http_presentation" data-slide="prev" data-mdc-auto-init="MDCRipple">
-                              <i class="material-icons mdc-button__icon">navigate_before</i>
-                              Previous
-                          </button>
-                          <!-- button to go to next slide -->
-                          <button class="presentation-button-right mdc-button mdc-button--outlined" href="#http_presentation" data-slide="next" data-mdc-auto-init="MDCRipple">
-                              Next
-                              <i class="material-icons mdc-button__icon">navigate_next</i>
-                           </button>
-                        </div>
                     </div>
 
                     <!-- HTML presentation -->
