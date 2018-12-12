@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
         <meta name="HandheldFriendly" content="True">
-        <link rel="icon" sizes="192x192" href="https://matthew-grove.ml/logo.png">
+        <link rel="icon" href="https://matthew-grove.ml/logo.png">
 
         <!-- add to homescreen for Chrome on Android -->
         <meta name="mobile-web-app-capable" content="yes">
@@ -22,6 +22,7 @@
         <meta name="msapplication-TileImage" content="https://matthew-grove.ml/logo.png">
         <meta name="msapplication-TileColor" content="#d84315">
 
+        <!-- title & description -->
         <title>Computer Science Blog | Matthew Grove</title>
         <meta name="description" content="GCSE Computer Science Blog - by Matthew Grove">
 
@@ -65,17 +66,20 @@
         <!-- content of navbar is included via jQuery -->
         <aside class="navbar-insert mdc-drawer mdc-drawer--modal"></aside>
 
+        <!-- needed so that the area to the right of the drawer is dimmed when the drawer is open. The drawer doesn't work without this -->
         <div class="mdc-drawer-scrim"></div>
 
         <div class="mdc-drawer-app-content">
+            <!-- top app bar is inserted via jQuery -->
             <header class="mdc-top-app-bar app-bar" id="app-bar"></header>
 
+            <!-- containers ensure main content isn't covered by top app bar -->
             <main class="main-content" id="main-content">
-               <div class="mdc-top-app-bar--fixed-adjust">
-                   <p>The current date is <span id="current_date">unknown</span>.</p>
+                <div class="mdc-top-app-bar--fixed-adjust">
+                    <p>The current date is <span id="current_date">unknown</span>.</p>
 					<h1>HTTP Introduction</h1>
                     <div id="http_presentation" class="carousel slide" data-interval="false" data-ride="carousel">
-                       <!-- Wrapper for slides -->
+                       <!-- Wrapper for presentation slides -->
                        <div class="carousel-inner">
                        </div>
                        <div class="presentation-flexbox">
@@ -84,12 +88,14 @@
                           </ol>
                           <!-- button to go to previous slide -->
                           <button class="presentation-button-left mdc-button mdc-button--outlined" href="#http_presentation" data-slide="prev" data-mdc-auto-init="MDCRipple">
+                              <!-- navigation icon -->
                               <i class="material-icons mdc-button__icon">navigate_before</i>
                               Previous
                           </button>
                           <!-- button to go to next slide -->
                           <button class="presentation-button-right mdc-button mdc-button--outlined" href="#http_presentation" data-slide="next" data-mdc-auto-init="MDCRipple">
                               Next
+                              <!-- navigation icon -->
                               <i class="material-icons mdc-button__icon">navigate_next</i>
                            </button>
                         </div>
@@ -99,7 +105,7 @@
                     <h1>HTML, CSS & JS Introduction</h1>
 
                     <div id="html_presentation" class="carousel slide" data-interval="false" data-ride="carousel">
-                        <!-- Wrapper for slides -->
+                        <!-- Wrapper for presentation slides -->
                         <div class="carousel-inner">
                         </div>
                         <div class="presentation-flexbox">
@@ -108,16 +114,19 @@
                            </ol>
                            <!-- button to go to previous slide -->
                            <button class="presentation-button-left mdc-button mdc-button--outlined" href="#html_presentation" data-slide="prev" data-mdc-auto-init="MDCRipple">
+                               <!-- navigation icon -->
                                <i class="material-icons mdc-button__icon">navigate_before</i>
                                Previous
                            </button>
                            <!-- button to go to next slide -->
                            <button class="presentation-button-right mdc-button mdc-button--outlined" href="#html_presentation" data-slide="next" data-mdc-auto-init="MDCRipple">
                                Next
+                               <!-- navigation icon -->
                                <i class="material-icons mdc-button__icon">navigate_next</i>
                            </button>
                         </div>
                     </div>
+                    <!-- HTML basics info is inserted via jQuery -->
  					<div id="blog-insert"></div>
 
                     <!-- link to source code on GitHub -->
