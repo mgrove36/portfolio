@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <meta name="HandheldFriendly" content="True">
+        <link rel="icon" sizes="192x192" href="https://matthew-grove.ml/logo.png">
+
+        <!-- add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="icon" sizes="192x192" href="https://matthew-grove.ml/logo.png">
+
+        <!-- add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Luhn Algorithm | Matthew Grove">
+        <link rel="apple-touch-icon-precomposed" href="https://matthew-grove.ml/logo.png">
+
+        <!-- tile icon & colour for Windows 8 -->
+        <meta name="msapplication-TileImage" content="https://matthew-grove.ml/logo.png">
+        <meta name="msapplication-TileColor" content="#d84315">
+
+        <title>Demo Site | Matthew Grove</title>
+        <meta name="description" content="Small coding projects - by Matthew Grove">
+
+        <!-- import Roboto (font) -->
+        <link href="/assets/roboto.css" rel="stylesheet" type="text/css">
+
+        <!-- import jQuery -->
+        <script src="/assets/jquery.min.js" type="text/javascript"></script>
+
+        <!-- import cookie JavaScript -->
+        <script src="/assets/cookies.js" type="text/javascript"></script>
+
+        <!-- import Material Design components & icons -->
+        <link href="/assets/material-components-web.min.css" rel="stylesheet" type="text/css">
+        <link href="/assets/material_icons.css" rel="stylesheet" type="text/css">
+        <script src="/assets/material-components-web.min.js" type="text/javascript"></script>
+
+        <!-- import local styling & scripts -->
+        <script src="/assets/global.js" type="text/javascript"></script>
+        <link href="/assets/global.css" rel="stylesheet" type="text/css">
+        <script src="script.js" type="text/javascript"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124505000-1" type="text/javascript"></script>
+        <script type="text/javascript">
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-124505000-1');
+        </script>
+    </head>
+    <body>
+        <!-- cookie notice is included via jQuery -->
+        <div id="cookies"></div>
+
+        <!-- content of navbar is included via jQuery -->
+        <aside class="navbar-insert mdc-drawer mdc-drawer--modal"></aside>
+
+        <div class="mdc-drawer-scrim"></div>
+
+        <div class="mdc-drawer-app-content">
+            <header class="mdc-top-app-bar app-bar" id="app-bar"></header>
+
+            <main class="main-content" id="main-content">
+                <div class="mdc-top-app-bar--fixed-adjust">
+                    <p>
+                        This site contains code for small projects that I am doing; each project can be accessed via the navigation drawer.
+                        If you have any ideas for projects I could do, please leave them <a href="https://goo.gl/forms/qXO1cwSbE4FoQHdq2">here</a>.
+                    </p>
+                    <!-- link to source code on GitHub -->
+                    <a href="https://github.com/mgrove36/demo-code/blob/master/index.html" class="source-code-link mdc-fab mdc-fab--extended" data-mdc-auto-init="MDCRipple"></a>
+                </div>
+            </main>
+            <footer>
+                &copy; Matthew Grove 2018
+            </footer>
+        </div>
+    </body>
+</html>

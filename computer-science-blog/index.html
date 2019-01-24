@@ -1,0 +1,143 @@
+<!-- Reading School 2018, HTML page by Matthew Grove, Year 10 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <meta name="HandheldFriendly" content="True">
+
+        <!-- add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="icon" sizes="192x192" href="https://matthew-grove.ml/logo.png">
+
+        <!-- add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Computer Science Blog | Matthew Grove">
+        <link rel="apple-touch-icon-precomposed" href="https://matthew-grove.ml/logo.png">
+
+        <!-- tile icon & colour for Windows 8 -->
+        <meta name="msapplication-TileImage" content="https://matthew-grove.ml/logo.png">
+        <meta name="msapplication-TileColor" content="#d84315">
+
+        <!-- title & description -->
+        <title>Computer Science Blog | Matthew Grove</title>
+        <meta name="description" content="GCSE Computer Science Blog - by Matthew Grove">
+
+        <!-- import Roboto (font) -->
+        <link href="/assets/roboto.css" rel="stylesheet" type="text/css">
+
+        <!-- import jQuery -->
+        <script src="/assets/jquery.min.js" type="text/javascript"></script>
+
+        <!-- import cookie JavaScript -->
+        <script src="/assets/cookies.js" type="text/javascript"></script>
+
+        <!-- import Material Design components & icons -->
+        <link href="/assets/material-components-web.min.css" rel="stylesheet" type="text/css">
+        <link href="/assets/material_icons.css" rel="stylesheet" type="text/css">
+        <script src="/assets/material-components-web.min.js" type="text/javascript"></script>
+
+        <!-- import Bootstrap -->
+        <script src="/assets/bootstrap.min.js" type="text/javascript"></script>
+        <link href="/assets/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+        <!-- import local styling & scripts -->
+        <script src="/assets/global.js" type="text/javascript"></script>
+        <link href="/assets/global.css" rel="stylesheet" type="text/css">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <script src="scripts/scripts.js" type="text/javascript"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124505000-1" type="text/javascript"></script>
+        <script type="text/javascript">
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-124505000-1');
+        </script>
+    </head>
+    <body>
+        <!-- cookie notice is included via jQuery -->
+        <div id="cookies"></div>
+
+        <!-- content of navbar is included via jQuery -->
+        <aside class="navbar-insert mdc-drawer mdc-drawer--modal"></aside>
+
+        <!-- needed so that the area to the right of the drawer is dimmed when the drawer is open. The drawer doesn't work without this -->
+        <div class="mdc-drawer-scrim"></div>
+
+        <div class="mdc-drawer-app-content">
+            <!-- top app bar is inserted via jQuery -->
+            <header class="mdc-top-app-bar app-bar" id="app-bar"></header>
+
+            <!-- containers ensure main content isn't covered by top app bar -->
+            <main class="main-content" id="main-content">
+                <div class="mdc-top-app-bar--fixed-adjust">
+                    <p>The current date is <span id="current_date">unknown</span>.</p>
+					<h1>HTTP Introduction</h1>
+                    <div id="http_presentation" class="carousel slide" data-interval="false" data-ride="carousel">
+                       <!-- Wrapper for presentation slides -->
+                       <div class="carousel-inner">
+                       </div>
+                       <div class="presentation-flexbox">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                          </ol>
+                          <!-- button to go to previous slide -->
+                          <button class="presentation-button-left mdc-button mdc-button--outlined" href="#http_presentation" data-slide="prev" data-mdc-auto-init="MDCRipple">
+                              <!-- navigation icon -->
+                              <i class="material-icons mdc-button__icon">navigate_before</i>
+                              Previous
+                          </button>
+                          <!-- button to go to next slide -->
+                          <button class="presentation-button-right mdc-button mdc-button--outlined" href="#http_presentation" data-slide="next" data-mdc-auto-init="MDCRipple">
+                              Next
+                              <!-- navigation icon -->
+                              <i class="material-icons mdc-button__icon">navigate_next</i>
+                           </button>
+                        </div>
+                    </div>
+
+                    <!-- HTML presentation -->
+                    <h1>HTML, CSS & JS Introduction</h1>
+
+                    <div id="html_presentation" class="carousel slide" data-interval="false" data-ride="carousel">
+                        <!-- Wrapper for presentation slides -->
+                        <div class="carousel-inner">
+                        </div>
+                        <div class="presentation-flexbox">
+                           <!-- Indicators -->
+                           <ol class="carousel-indicators">
+                           </ol>
+                           <!-- button to go to previous slide -->
+                           <button class="presentation-button-left mdc-button mdc-button--outlined" href="#html_presentation" data-slide="prev" data-mdc-auto-init="MDCRipple">
+                               <!-- navigation icon -->
+                               <i class="material-icons mdc-button__icon">navigate_before</i>
+                               Previous
+                           </button>
+                           <!-- button to go to next slide -->
+                           <button class="presentation-button-right mdc-button mdc-button--outlined" href="#html_presentation" data-slide="next" data-mdc-auto-init="MDCRipple">
+                               Next
+                               <!-- navigation icon -->
+                               <i class="material-icons mdc-button__icon">navigate_next</i>
+                           </button>
+                        </div>
+                    </div>
+                    <!-- HTML basics info is inserted via jQuery -->
+ 					<div id="blog-insert"></div>
+
+                    <!-- link to source code on GitHub -->
+                    <a href="https://github.com/mgrove36/demo-code/tree/master/computer-science-blog/" class="source-code-link mdc-fab mdc-fab--extended" data-mdc-auto-init="MDCRipple"></a>
+               </div>
+            </main>
+            <footer>
+                Made in association with Daniel Dunbar
+                <br>
+                <br>
+                &copy; Matthew Grove & Daniel Dunbar 2018
+            </footer>
+        </div>
+    </body>
+</html>
