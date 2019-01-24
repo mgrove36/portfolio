@@ -21,8 +21,8 @@
         <meta name="msapplication-TileImage" content="https://matthew-grove.ml/logo.png">
         <meta name="msapplication-TileColor" content="#d84315">
 
-        <title>Luhn Algorithm | Matthew Grove</title>
-        <meta name="description" content="Replication of the Luhn Algorithm - by Matthew Grove">
+        <title>Demo Site | Matthew Grove</title>
+        <meta name="description" content="Small coding projects - by Matthew Grove">
 
         <!-- import Roboto (font) -->
         <link href="/assets/roboto.css" rel="stylesheet" type="text/css">
@@ -39,9 +39,9 @@
         <script src="/assets/material-components-web.min.js" type="text/javascript"></script>
 
         <!-- import local styling & scripts -->
-        <script src="script.js" type="text/javascript"></script>
         <script src="/assets/global.js" type="text/javascript"></script>
         <link href="/assets/global.css" rel="stylesheet" type="text/css">
+        <script src="script.js" type="text/javascript"></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124505000-1" type="text/javascript"></script>
@@ -66,34 +66,12 @@
 
             <main class="main-content" id="main-content">
                 <div class="mdc-top-app-bar--fixed-adjust">
-                    <h1>Validate</h1>
-                    <!-- input field (in a container so that unwanted overflow from :before & :after is hidden) -->
-                    <div class="mdc-text-field-container">
-                        <div class="mdc-text-field mdc-text-field--outlined"  data-mdc-auto-init="MDCTextField">
-                            <input type="number" id="number-input-field" class="mdc-text-field__input">
-                            <label for="number-input-field" class="mdc-floating-label ">Your Number</label>
-                            <div class="mdc-notched-outline">
-                                <svg>
-                                    <path class="mdc-notched-outline__path"/>
-                                </svg>
-                            </div>
-                            <div class="mdc-notched-outline__idle"></div>
-                        </div>
-                        <!-- input field helper text -->
-                        <p class="mdc-text-field-helper-text" aria-hidden="true">
-                            Validate with the Luhn Algorithm
-                        </p>
-                    </div>
-                    <!-- button to submit & check number with Luhn algorithm -->
-                    <button class="validation_button mdc-button mdc-button--outlined" onclick="checkNumber()" data-mdc-auto-init="MDCRipple">
-                        <i class="material-icons mdc-button__icon">check_circle_outline</i>
-                        Check
-                    </button>
-                    <!-- displays evaluation of number by Luhn algorithm -->
-                    <p id="validation_message"></p>
-
+                    <p>
+                        This site contains code for small projects that I am doing; each project can be accessed via the navigation drawer.
+                        If you have any ideas for projects I could do, please leave them <a href="https://goo.gl/forms/qXO1cwSbE4FoQHdq2">here</a>.
+                    </p>
                     <!-- link to source code on GitHub -->
-                    <a href="https://github.com/mgrove36/demo-code/tree/master/luhn-algorithm/" class="source-code-link mdc-fab mdc-fab--extended" data-mdc-auto-init="MDCRipple"></a>
+                    <a href="https://github.com/mgrove36/demo-code/blob/master/index.html" class="source-code-link mdc-fab mdc-fab--extended" data-mdc-auto-init="MDCRipple"></a>
                 </div>
             </main>
             <footer>

@@ -1,6 +1,3 @@
-// set page title
-window.page_title = "Computer Science Blog | Matthew Grove";
-
 window.onload = function() {
 	// set the current date
     var date = new Date();
