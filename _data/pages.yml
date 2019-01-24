@@ -1,0 +1,15 @@
+- title: Blog
+  icon: subject
+  url: https://blog.matthew-grove.ml/
+
+- title: Home Page
+  icon: home
+  url: /
+
+- title: GCSE Computer Science Blog
+  icon: code
+  url: /computer-science-blog/
+
+- title: Luhn Algorithm
+  icon: credit_card
+  url: /luhn-algorithm/
