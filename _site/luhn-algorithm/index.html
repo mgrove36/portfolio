@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="HandheldFriendly" content="True">
+    <link rel="icon" sizes="192x192" href="https://matthew-grove.ml/logo.png">
+
+    <!-- add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="https://matthew-grove.ml/logo.png">
+
+    <!-- add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Luhn Algorithm | Matthew Grove">
+    <link rel="apple-touch-icon-precomposed" href="https://matthew-grove.ml/logo.png">
+
+    <!-- tile icon & colour for Windows 8 -->
+    <meta name="msapplication-TileImage" content="https://matthew-grove.ml/logo.png">
+    <meta name="msapplication-TileColor" content="#d84315">
+
+    <title>Luhn Algorithm | Matthew Grove</title>
+    <meta name="description" content="Replication of the Luhn Algorithm - by Matthew Grove">
+
+    <!-- import Roboto (font) -->
+    <link href="/css/roboto.css" rel="stylesheet" type="text/css">
+
+    <!-- import jQuery -->
+    <script src="/js/jquery.min.js" type="text/javascript"></script>
+
+    <!-- import cookie JavaScript -->
+    <script src="/js/cookies.js" type="text/javascript"></script>
+
+    <!-- import Material Design components & icons -->
+    <link href="/css/material-components-web.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/material_icons.css" rel="stylesheet" type="text/css">
+    <script src="/js/material-components-web.min.js" type="text/javascript"></script>
+
+    <!-- import local styling & scripts -->
+    <script src="/js/global.js" type="text/javascript"></script>
+    <link href="/css/global.css" rel="stylesheet" type="text/css">
+    <script src="script.js" type="text/javascript"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124505000-1" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-124505000-1');
+    </script>
+</head>
+
+    <body>
+        <!-- cookie notice is included automatically -->
+        <div id="cookies">
+    <p>Just to let you know, I use cookies on my site.</p>
+    <p><a href="javascript:void(0);" id="close-cookies">OK</a></p>
+</div>
+
+
+        <!-- content of navbar is included automatically -->
+        <aside class="mdc-drawer mdc-drawer--modal">
+    <div class="mdc-drawer__content">
+        <div style="margin: 15px;text-align:center;">
+            <img src="https://matthew-grove.ml/logo.png" style="width: 90%;"/>
+        </div>
+        <div class="mdc-list">
+            <a class="mdc-list-item" href="https://blog.matthew-grove.ml">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">subject</i>
+                <span class="mdc-list-item__text">Blog</span>
+            </a>
+            
+                <a class="mdc-list-item" href="http://localhost:4000/">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
+                    <span class="mdc-list-item__text">Home Page</span>
+                </a>
+            
+                <a class="mdc-list-item" href="http://localhost:4000/luhn-algorithm">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">credit_card</i>
+                    <span class="mdc-list-item__text">Luhn Algorithm</span>
+                </a>
+            
+            <!--<a class="mdc-list-item" href="/">-->
+            <!--    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>-->
+            <!--    <span class="mdc-list-item__text">Home Page</span>-->
+            <!--</a>-->
+            <!--<a class="mdc-list-item" href="/luhn-algorithm/">-->
+            <!--    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">credit_card</i>-->
+            <!--    <span class="mdc-list-item__text">Luhn Algorithm</span>-->
+            <!--</a>-->
+            <!--<a class="mdc-list-item" href="/computer-science-blog/">-->
+            <!--    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">code</i>-->
+            <!--    <span class="mdc-list-item__text">GCSE Computer Science Blog</span>-->
+            <!--</a>-->
+        </div>
+    </div>
+</aside>
+
+
+
+
+
+
+        <div class="mdc-drawer-scrim"></div>
+
+        <div class="mdc-drawer-app-content">
+            <header class="mdc-top-app-bar app-bar" id="app-bar">
+    <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <a href="javascript:void(0);" class="demo-mensu material-icons mdc-top-app-bar__navigation-icon">menu</a>
+            <span class="mdc-top-app-bar__title">Luhn Algorithm | Matthew Grove</span>
+        </section>
+    </div>
+</header>
+
+
+            <main class="main-content" id="main-content">
+                <div class="mdc-top-app-bar--fixed-adjust">
+                    <h1 id="validate">Validate</h1>
+<!-- input field (in a container so that unwanted overflow from :before & :after is hidden) -->
+<div class="mdc-text-field-container">
+    <div class="mdc-text-field mdc-text-field--outlined" data-mdc-auto-init="MDCTextField">
+        <input type="number" id="number-input-field" class="mdc-text-field__input" />
+        <label for="number-input-field" class="mdc-floating-label ">Your Number</label>
+        <div class="mdc-notched-outline">
+            <svg>
+                <path class="mdc-notched-outline__path" />
+            </svg>
+        </div>
+        <div class="mdc-notched-outline__idle"></div>
+    </div>
+    <!-- input field helper text -->
+    <p class="mdc-text-field-helper-text" aria-hidden="true">
+        Validate with the Luhn Algorithm
+    </p>
+</div>
+<!-- button to submit & check number with Luhn algorithm -->
+<p><button class="validation_button mdc-button mdc-button--outlined" onclick="checkNumber()" data-mdc-auto-init="MDCRipple">
+    <i class="material-icons mdc-button__icon">check_circle_outline</i>
+    Check
+</button>
+<!-- displays evaluation of number by Luhn algorithm --></p>
+<p id="validation_message"></p>
+
+                    <!-- link to source code on GitHub -->
+                    <a href="https://github.com/mgrove36/demo-code/blob/master/luhn-algorithm/" class="source-code-link mdc-fab mdc-fab--extended" data-mdc-auto-init="MDCRipple">
+                        <span class="material-icons mdc-fab__icon">rate_review</span>
+                        <span class="mdc-fab__label">View on GitHub</span>
+                    </a>
+                </div>
+            </main>
+            <footer>
+    &copy; Matthew Grove 2019
+</footer>
+
+        </div>
+    </body>
+</html>

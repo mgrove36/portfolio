@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body>
+        <!-- cookie notice is included automatically -->
+        {% include cookie-notice.html %}
+
+        <!-- content of navbar is included automatically -->
+        {% include navbar.html %}
+
+        <div class="mdc-drawer-scrim"></div>
+
+        <div class="mdc-drawer-app-content">
+            {% include top-app-bar.html %}
+
+            <main class="main-content" id="main-content">
+                <div class="mdc-top-app-bar--fixed-adjust">
+                    {{ content }}
+                    <!-- link to source code on GitHub -->
+                    <a href="https://github.com/mgrove36/demo-code/blob/master{{ page.url | relative_url }}" class="source-code-link mdc-fab mdc-fab--extended" data-mdc-auto-init="MDCRipple">
+                        <span class="material-icons mdc-fab__icon">rate_review</span>
+                        <span class="mdc-fab__label">View on GitHub</span>
+                    </a>
+                </div>
+            </main>
+            {% include footer.html %}
+        </div>
+    </body>
+</html>
