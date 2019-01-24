@@ -10,7 +10,7 @@ layout: default
 <!-- import extra styling and scripts -->
 <link href="css/main.css" rel="stylesheet" type="text/css">
 <link href="css/presentation-imports.css" rel="stylesheet" type="text/css">
-<script src="js/css-presentation-slides.js" type="text/javascript"></script>
+<script src="js/css-presentation-slide.js" type="text/javascript"></script>
 <script src="js/scripts.js" type="text/javascript"></script>
 
 <p>The current date is <span id="current_date">unknown</span>.</p>
