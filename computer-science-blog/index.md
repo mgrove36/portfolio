@@ -65,3 +65,5 @@ layout: default
 </div>
 <!-- HTML basics info is inserted via jQuery -->
 <div id="blog-insert"></div>
+<br>
+<center>Made in association with Daniel Dunbar</center>
