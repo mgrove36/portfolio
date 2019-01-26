@@ -2,14 +2,17 @@
 title: Luhn Algorithm
 description: Replication of the Luhn algorithm
 layout: default
+icon: credit_card
 ---
 
-# Validate
+<link href="style.css" rel="stylesheet" type="text/css">
+
+# Validate Your Number
 <!-- input field (in a container so that unwanted overflow from :before & :after is hidden) -->
 <div class="mdc-text-field-container">
     <div class="mdc-text-field mdc-text-field--outlined"  data-mdc-auto-init="MDCTextField">
         <input type="number" id="number-input-field" class="mdc-text-field__input">
-        <label for="number-input-field" class="mdc-floating-label ">Your Number</label>
+        <label for="number-input-field" class="mdc-floating-label ">Number</label>
         <div class="mdc-notched-outline">
             <svg>
                 <path class="mdc-notched-outline__path"/>

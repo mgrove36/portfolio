@@ -2,6 +2,7 @@
 title: Demo Site
 description: Small coding projects
 layout: default
+icon: home
 ---
 
 # My {{ page.title }}

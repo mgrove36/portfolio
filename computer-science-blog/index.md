@@ -2,6 +2,7 @@
 title: GCSE Computer Science Blog
 description: Research about HTTP, HTTPS, SSL and more, made in collaboration with Daniel Dunbar
 layout: default
+icon: code
 ---
 
 <!-- import Bootstrap - must be before extra styling so that carousel indicators' default styling is overwritten -->
