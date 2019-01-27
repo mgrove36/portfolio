@@ -6,6 +6,7 @@ icon: credit_card
 ---
 
 <link href="style.css" rel="stylesheet" type="text/css">
+<script src="script.js" type="text/javascript"></script>
 
 # Validate Your Number
 <!-- input field (in a container so that unwanted overflow from :before & :after is hidden) -->
