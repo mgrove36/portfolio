@@ -1,4 +1,4 @@
-/* Reading School 2018, CSS*/
+/* Reading School 2018, CSS */
 .carousel-inner {
 	height: 250px;
 	border-radius: 4px;
@@ -14,6 +14,7 @@
   	display: -ms-flexbox;
   	display: -webkit-flex;
   	display: flex;
+  	margin-bottom: 15px;
 
   	-webkit-flex-flow: row wrap;
   	flex-flow: row wrap;
