@@ -80,7 +80,7 @@ body {
     display: none;
     width: 100%;
     position: fixed;
-    background: var(--mdc-theme-primary);
+    background: var(--mdc-theme-secondary);
     color: var(--mdc-theme-background);
     text-align: center;
     bottom: -100px;

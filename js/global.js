@@ -27,7 +27,7 @@ $(document).ready(function() {
     $(drawer_item_link_query_selector + "/index.html']").attr("aria-selected", "true");
     
     // include cookie notice
-    if(Cookies.get("demo.matthew-grove.ml-cookies-accepted") != "true") {
+    if(Cookies.get("demo.mgrove.uk-cookies-accepted") != "true") {
         $("#cookies").show();
         $("#cookies").animate({bottom: "0px"}, 1000);
         $(".source-code-link").animate({bottom: "100px"}, 1000);
@@ -36,7 +36,7 @@ $(document).ready(function() {
             $("#cookies").animate({bottom: "-100px"}, 1000);
             setTimeout(function(){$("#cookies").hide()},1000);
             $(".source-code-link").animate({bottom: "15px"}, 1000);
-            Cookies.set("demo.matthew-grove.ml-cookies-accepted", "true", {expires: 30});
+            Cookies.set("demo.mgrove.uk-cookies-accepted", "true", {expires: 30});
         });
     }
 });
