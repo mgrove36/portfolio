@@ -13,7 +13,7 @@
                 <span class="mdc-list-item__text">Home Page</span>
             </a>
             {% for project in site.pages | sort "title" %}
-            {% if project.url != "/" %}
+            {% if project.url != "/" and project.url != "/sitemap.xml" and project.url[-4:-1] != ".css" %}
             <a class="mdc-list-item" href="{{ project.url | relative_url }}">
                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">{{ project.icon }}</i>
                 <span class="mdc-list-item__text">{{ project.title }}</span>
