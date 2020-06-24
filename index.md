@@ -1,10 +1,12 @@
 ---
-title: Demo Site
-description: Small coding projects
-layout: default
-icon: home
+title: ComSci
+description: Some Computer Science info
+layout: none
+icon: music_video
 ---
 
-# My {{ page.title }}
-This site contains code for small projects that I am doing; each project can be accessed via the navigation drawer.
-If you have any ideas for projects I could do, please leave them [here](https://goo.gl/forms/qXO1cwSbE4FoQHdq2).
+<div style="z-index=1000;position:fixed;height:100%;width:100%">
+	<iframe height="100%" width="100%" src="https://www.youtube.com/embed/oHg5SJYRHA0?controls=0&rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<style>html, body { margin: 0; }</style>

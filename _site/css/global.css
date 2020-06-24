@@ -1,0 +1,99 @@
+:root {
+    /* change theme */
+    --mdc-theme-primary: #0092a1;
+    --mdc-theme-secondary: #546875;
+    /* ensure Bootstrap doesn't alter any font sizes set in rem */
+    font-size: initial;
+}
+
+/* implement colour theme on elements that don't have it applied by default */
+.mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label, .mdc-list-item--activated .mdc-list-item__text, .mdc-drawer .mdc-list-item--activated .mdc-list-item__graphic {
+   color: var(--mdc-theme-primary);
+}
+
+/* hide unwanted overflow from mdc-text-field :before & :after */
+.mdc-text-field-container {
+   overflow: hidden;
+}
+/* give space for mdc-text-field label to show properly when field is selected */
+.mdc-text-field {
+   margin-top: 5px;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   text-align: center;
+}
+.mdc-text-field-helper-text {
+   margin-bottom: 10px;
+}
+.source-code-link {
+   position: fixed;
+   bottom: 15px;
+   right: 25px;
+}
+a {
+    color: var(--mdc-theme-secondary);
+}
+
+/* for MDC navbar */
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.mdc-drawer-app-content {
+    flex: auto;
+    overflow: auto;
+}
+
+.main-content {
+    overflow: auto;
+}
+
+.app-bar {
+    position: absolute;
+}
+
+.main-content, footer {
+    margin: 20px;
+}
+
+/* ensure that buttons' colours don't change on hover and background colour changes are animated */
+.mdc-button:hover, .mdc-fab:hover, .material-icons:hover, .mdc-button:focus, .mdc-fab:focus, .material-icons:focus {
+    text-decoration: none;
+    transition: background-color 0.75s;
+}
+.mdc-button:hover {
+    color: var(--mdc-theme-primary);
+}
+.mdc-fab:hover {
+    color: #fff;
+}
+.mdc-fab::before, .mdc-top-app-bar__action-item::before, .mdc-top-app-bar__navigation-icon::before {
+    transition-duration: 0.15s;
+}
+
+/* for cookie notice */
+#cookies {
+    display: none;
+    width: 100%;
+    position: fixed;
+    background: var(--mdc-theme-secondary);
+    color: var(--mdc-theme-background);
+    text-align: center;
+    bottom: -100px;
+    left: 0;
+    z-index: 9999;
+}
+
+#cookies p {
+    margin: 10px;
+}
+
+#cookies p a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
