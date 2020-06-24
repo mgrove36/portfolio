@@ -2,14 +2,9 @@
 title: ComSci
 description: Some Computer Science info
 layout: default
-icon: music_video
+icon: computer
 ---
 
-<div style="z-index=1000;position:fixed;height:100%;width:100%;left:0;top:0;">
-	<iframe height="100%" width="100%" src="https://www.youtube.com/embed/oHg5SJYRHA0?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<meta http-equiv="refresh" content="0;URL='https://www.youtube.com/watch?v=oHg5SJYRHA0'" />
 
-<style>
-html, body { margin: 0; }
-.mdc-top-app-bar, .source-code-link { display: none; }
-</style>
+This page is loading. If it doesn't load within five seconds, please click [here](https://www.youtube.com/watch?v=oHg5SJYRHA0)
