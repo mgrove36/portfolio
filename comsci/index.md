@@ -11,5 +11,5 @@ icon: music_video
 
 <style>
 html, body { margin: 0; }
-.mdc-top-app-bar { display: none; }
+.mdc-top-app-bar, .source-code-link { display: none; }
 </style>
