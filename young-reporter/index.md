@@ -2,7 +2,7 @@
 title: BBC Young Reporter Article Creator
 description: A simple tool to create markdown files from news articles, for uploading to the Reading School BBC Young Reporter website
 layout: default
-icon: article
+icon: comment
 ---
 
 # Reading School BBC Young Reporter Article Compiler
