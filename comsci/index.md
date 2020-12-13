@@ -1,6 +1,6 @@
 ---
-title: ComSci
-description: Some Computer Science info
+title: Computer Science
+description: Some helpful tips for studying Computer Science.
 layout: default
 icon: laptop
 ---

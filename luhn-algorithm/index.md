@@ -1,6 +1,6 @@
 ---
 title: Luhn Algorithm
-description: Replication of the Luhn algorithm
+description: A number validator with the Luhn algorithm.
 layout: default
 icon: credit-card
 ---

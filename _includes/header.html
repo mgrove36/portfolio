@@ -10,8 +10,8 @@
 <!-- Nav -->
 <nav id="menu">
 	<ul class="links">
-		<li><a href="/" {% if page.url == "/" or page.url == "/index.html" %} class="current-page-link"
-				{% endif %}>Home</a></li>
+		<li><a href="/" {% if page.url == "/" or page.url == "/index.html" %} class="current-page-link" {% endif %}>Home</a></li>
+		<li><a href="https://blog.mgrove.uk">Blog</a></li>
 
 		{% assign all_pages = site.pages | sort: "title" %}
 		{% for project in all_pages %}
