@@ -1,13 +1,15 @@
 ---
-title: BBC Young Reporter Article Creator
+title: BBC Young Reporter Article Generator
 description: A tool to create markdown files from news articles and their metadata for uploading to the Reading School BBC Young Reporter website.
 layout: default
 icon: comment
 ---
 
-Fill in the fields below, and then click the *download* button to create a file to be uploaded to Reading School's BBC Young Reporter website.
+### Instructions
 
-Give the authors' names in the format `First_Name Last_Initial`, and separate multiple authors with a comma - e.g. `John D, Emma S`
+Fill in the fields below, and then click the *download* button to generate a file to be uploaded to Reading School's BBC Young Reporter website.
+
+Give the authors' names in the format `First_Name Last_Initial`, and separate multiple authors with a comma - e.g. `John D, Emma S`.
 
 * If there are any headings inside your article, please place `# ` in front of them.
 * For subtitles, use `## `, as so on for smaller headings, up to and including `###### `.
@@ -33,17 +35,79 @@ will produce:
 
 Other formatting can be done with the following:
 
-* For italics, use `*my italic text*`
-* For bold, use `**my bold text**`
-* For bold and italics, use `***my bold, italic text***`
-* For links, use `[text to show in article](URL)`
-* To include an extra image (besides the cover image), use
+* For italics, use `*my italic text*`.
+* For bold, use `**my bold text**`.
+* For bold and italics, use `***my bold, italic text***`.
+* For links, use `[text to show in article](URL)`.
+* To include an extra image (besides the cover image), use:
 <pre><code>{% raw %}{% include image.html id=ID_OF_IMAGE caption="IMAGE_CAPTION" copyright="IMAGE_COPYRIGHT" %}{% endraw %}</code></pre>
 replacing `ID_OF_IMAGE` with a unique ID for the image in your article - start at 1 for the first image (excluding the cover image).
 
 The cover image for your article must be a JPEG image, and have the `jpg` file extension. If your image is a PNG, you can [convert it using an online tool](https://png2jpg.com/). The file name must also be the same as your article's file name. This will be provided to you when you download the file from this page. E.g. if the file you download from this page is `news-article.md` then your cover image must be `news-article.jpg` (capital letters **DO** matter).
 
-Any extra images for your article must be in the format: `ARTICLE_FILE_NAME--extra-IMAGE_ID.jpg`, where you replace `ARTICLE_FILE_NAME` with the file name you used for the cover image, and `IMAGE_ID` with the ID you gave the image when you inserted it into your article's body, as seen above. E.g.: `news-article--extra-1.jpg` .
+Any extra images for your article must be in the format: `ARTICLE_FILE_NAME--extra-IMAGE_ID.jpg`, where you replace `ARTICLE_FILE_NAME` with the file name you used for the cover image, and `IMAGE_ID` with the ID you gave the image when you inserted it into your article's body, as seen above. E.g.: `news-article--extra-1.jpg`.
+
+<hr>
+
+###  Example
+
+<pre><code># Headline
+
+## Heading2
+
+### Heading3
+
+#### Heading4
+
+##### Heading5
+
+###### Heading6
+
+Some text.
+
+1. Numbered item 1
+2. **Numbered item 2**
+* *Bullet 1*
+* Bullet 2
+
+***Bold & italics***
+
+A link to [Google](https://google.com).</code></pre>
+
+Will produce:
+
+<blockquote>
+<h1>Headline</h1>
+
+<h2>Heading2</h2>
+
+<h3>Heading3</h3>
+
+<h4>Heading4</h4>
+
+<h5>Heading5</h5>
+
+<h6>Heading6</h6>
+
+<p>Some text.</p>
+
+<ol>
+    <li>Numbered item 1</li>
+    <li><b>Numbered item 2</b></li>
+</ol>
+<ul>
+    <li><i>Bullet 1</i></li>
+    <li>Bullet 2</li>
+</ul>
+
+<p><b><i>Bold & italics</i></b></p>
+
+A link to <a href="https://google.com">Google</a>.
+</blockquote>
+
+<hr>
+
+### Generator
 
 <form onreset="if (!($('form a.submit').hasClass('disabled'))) $('form a.submit').addClass('disabled');">
     <div class="row gtr-uniform">
@@ -148,3 +212,9 @@ $("form input[type='text']").keypress(function(event) {
     }
 });
 </script>
+
+<style>
+blockquote {
+    font-style: normal;
+}
+</style>

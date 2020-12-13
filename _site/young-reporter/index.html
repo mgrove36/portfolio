@@ -15,7 +15,7 @@
     <!-- add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="BBC Young Reporter Article Creator">
+    <meta name="apple-mobile-web-app-title" content="BBC Young Reporter Article Generator">
     <link rel="apple-touch-icon-precomposed" href="https://mgrove.uk/logo.png">
 
     <!-- tile icon & colour for Windows 8 -->
@@ -23,7 +23,7 @@
     <meta name="msapplication-TileColor" content="#26174e">
 
     <!-- page info -->
-    <title>BBC Young Reporter Article Creator | Matthew Grove</title>
+    <title>BBC Young Reporter Article Generator | Matthew Grove</title>
     <meta name="description" content="A tool to create markdown files from news articles and their metadata for uploading to the Reading School BBC Young Reporter website. | by Matthew Grove">
     <meta name="keywords" content="" />
 
@@ -65,7 +65,7 @@
 		
 		
 		<li><a href="/young-reporter/"  class="current-page-link"
-				>BBC Young Reporter Article Creator</a></li>
+				>BBC Young Reporter Article Generator</a></li>
 		
 		
 		
@@ -92,16 +92,18 @@
 
 	<!-- Heading -->
 	<div id="heading">
-		<h1>BBC Young Reporter Article Creator</h1>
+		<h1>BBC Young Reporter Article Generator</h1>
 	</div>
 
 	<!-- Main -->
 	<section id="main" class="wrapper">
 		<div class="inner">
 			<div class="content">
-				<p>Fill in the fields below, and then click the <em>download</em> button to create a file to be uploaded to Reading School’s BBC Young Reporter website.</p>
+				<h3 id="instructions">Instructions</h3>
 
-<p>Give the authors’ names in the format <code class="language-plaintext highlighter-rouge">First_Name Last_Initial</code>, and separate multiple authors with a comma - e.g. <code class="language-plaintext highlighter-rouge">John D, Emma S</code></p>
+<p>Fill in the fields below, and then click the <em>download</em> button to generate a file to be uploaded to Reading School’s BBC Young Reporter website.</p>
+
+<p>Give the authors’ names in the format <code class="language-plaintext highlighter-rouge">First_Name Last_Initial</code>, and separate multiple authors with a comma - e.g. <code class="language-plaintext highlighter-rouge">John D, Emma S</code>.</p>
 
 <ul>
   <li>If there are any headings inside your article, please place <code class="language-plaintext highlighter-rouge"># </code> in front of them.</li>
@@ -130,18 +132,80 @@
 <p>Other formatting can be done with the following:</p>
 
 <ul>
-  <li>For italics, use <code class="language-plaintext highlighter-rouge">*my italic text*</code></li>
-  <li>For bold, use <code class="language-plaintext highlighter-rouge">**my bold text**</code></li>
-  <li>For bold and italics, use <code class="language-plaintext highlighter-rouge">***my bold, italic text***</code></li>
-  <li>For links, use <code class="language-plaintext highlighter-rouge">[text to show in article](URL)</code></li>
-  <li>To include an extra image (besides the cover image), use</li>
+  <li>For italics, use <code class="language-plaintext highlighter-rouge">*my italic text*</code>.</li>
+  <li>For bold, use <code class="language-plaintext highlighter-rouge">**my bold text**</code>.</li>
+  <li>For bold and italics, use <code class="language-plaintext highlighter-rouge">***my bold, italic text***</code>.</li>
+  <li>For links, use <code class="language-plaintext highlighter-rouge">[text to show in article](URL)</code>.</li>
+  <li>To include an extra image (besides the cover image), use:</li>
 </ul>
 <pre><code>{% include image.html id=ID_OF_IMAGE caption="IMAGE_CAPTION" copyright="IMAGE_COPYRIGHT" %}</code></pre>
 <p>replacing <code class="language-plaintext highlighter-rouge">ID_OF_IMAGE</code> with a unique ID for the image in your article - start at 1 for the first image (excluding the cover image).</p>
 
 <p>The cover image for your article must be a JPEG image, and have the <code class="language-plaintext highlighter-rouge">jpg</code> file extension. If your image is a PNG, you can <a href="https://png2jpg.com/">convert it using an online tool</a>. The file name must also be the same as your article’s file name. This will be provided to you when you download the file from this page. E.g. if the file you download from this page is <code class="language-plaintext highlighter-rouge">news-article.md</code> then your cover image must be <code class="language-plaintext highlighter-rouge">news-article.jpg</code> (capital letters <strong>DO</strong> matter).</p>
 
-<p>Any extra images for your article must be in the format: <code class="language-plaintext highlighter-rouge">ARTICLE_FILE_NAME--extra-IMAGE_ID.jpg</code>, where you replace <code class="language-plaintext highlighter-rouge">ARTICLE_FILE_NAME</code> with the file name you used for the cover image, and <code class="language-plaintext highlighter-rouge">IMAGE_ID</code> with the ID you gave the image when you inserted it into your article’s body, as seen above. E.g.: <code class="language-plaintext highlighter-rouge">news-article--extra-1.jpg</code> .</p>
+<p>Any extra images for your article must be in the format: <code class="language-plaintext highlighter-rouge">ARTICLE_FILE_NAME--extra-IMAGE_ID.jpg</code>, where you replace <code class="language-plaintext highlighter-rouge">ARTICLE_FILE_NAME</code> with the file name you used for the cover image, and <code class="language-plaintext highlighter-rouge">IMAGE_ID</code> with the ID you gave the image when you inserted it into your article’s body, as seen above. E.g.: <code class="language-plaintext highlighter-rouge">news-article--extra-1.jpg</code>.</p>
+
+<hr />
+
+<h3 id="example">Example</h3>
+
+<pre><code># Headline
+
+## Heading2
+
+### Heading3
+
+#### Heading4
+
+##### Heading5
+
+###### Heading6
+
+Some text.
+
+1. Numbered item 1
+2. **Numbered item 2**
+* *Bullet 1*
+* Bullet 2
+
+***Bold &amp; italics***
+
+A link to [Google](https://google.com).</code></pre>
+
+<p>Will produce:</p>
+
+<blockquote>
+<h1>Headline</h1>
+
+<h2>Heading2</h2>
+
+<h3>Heading3</h3>
+
+<h4>Heading4</h4>
+
+<h5>Heading5</h5>
+
+<h6>Heading6</h6>
+
+<p>Some text.</p>
+
+<ol>
+    <li>Numbered item 1</li>
+    <li><b>Numbered item 2</b></li>
+</ol>
+<ul>
+    <li><i>Bullet 1</i></li>
+    <li>Bullet 2</li>
+</ul>
+
+<p><b><i>Bold &amp; italics</i></b></p>
+
+A link to <a href="https://google.com">Google</a>.
+</blockquote>
+
+<hr />
+
+<h3 id="generator">Generator</h3>
 
 <form onreset="if (!($('form a.submit').hasClass('disabled'))) $('form a.submit').addClass('disabled');">
     <div class="row gtr-uniform">
@@ -246,6 +310,12 @@ $("form input[type='text']").keypress(function(event) {
     }
 });
 </script>
+
+<style>
+blockquote {
+    font-style: normal;
+}
+</style>
 
 
 			</div>
