@@ -2,7 +2,7 @@
 title: ComSci
 description: Some Computer Science info
 layout: default
-icon: computer
+icon: laptop
 ---
 
 <meta http-equiv="refresh" content="0;URL='https://www.youtube.com/watch?v=oHg5SJYRHA0'" />

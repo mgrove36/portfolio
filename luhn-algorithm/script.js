@@ -1,13 +1,25 @@
-document.addEventListener("keyup", function(event) {
-    // stop any code that may normally run when enter key pressed
-    event.preventDefault();
-    // if enter key is pressed, run Luhn algorithm
-    if (event.keyCode === 13) {
+document.addEventListener("keydown", function(event) {
+    if (event.defaultPrevented) {
+        return;
+    }
+
+    var handled = false;
+    if (event.key === "Enter") {
         checkNumber();
+        handled = true;
     } else {
         // if number in input field is being edited, remove previous number evaluation message
         $("#validation_message").html(null);
     }
+
+    if (handled) {
+        // Suppress "double action" if event handled
+        event.preventDefault();
+    }
+});
+
+$("input[type='reset']").addEventListener("keydown", function(event) {
+    $("#validation_message").html(null);
 });
 
 // function for validating number entered with Luhn algorithm

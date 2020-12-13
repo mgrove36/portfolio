@@ -1,34 +1,39 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-    {% include head.html %}
-    <body>
-        <!-- cookie notice is included automatically -->
-        {% include cookie-notice.html %}
 
-        <!-- content of navbar is included automatically -->
-        {% include navbar.html %}
+{% include head.html %}
 
-        <div class="mdc-drawer-app-content">
-            <header class="mdc-top-app-bar app-bar" id="app-bar">
-                <div class="mdc-top-app-bar__row">
-                    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                        <a href="javascript:void(0);" class="demo-mensu material-icons mdc-top-app-bar__navigation-icon">menu</a>
-                        <span class="mdc-top-app-bar__title">{{ page.title }} | Matthew Grove</span>
-                    </section>
-                </div>
-            </header>
+<script src="/assets/js/jquery.min.js"></script>
 
-            <main class="main-content" id="main-content">
-                <div class="mdc-top-app-bar--fixed-adjust">
-                    {{ content }}
-                    <!-- link to source code on GitHub -->
-                    <a href="https://github.com/mgrove36/demo-code/tree/master{{ page.url | relative_url }}" class="source-code-link mdc-fab mdc-fab--extended" data-mdc-auto-init="MDCRipple">
-                        <span class="material-icons mdc-fab__icon">rate_review</span>
-                        <span class="mdc-fab__label">View on GitHub</span>
-                    </a>
-                </div>
-            </main>
-            {% include footer.html %}
-        </div>
-    </body>
+<body class="is-preload">
+	
+	{% include header.html %}
+
+	{% include cookie-notice.html %}
+
+	<!-- Heading -->
+	<div id="heading">
+		<h1>{{ page.title }}</h1>
+	</div>
+
+	<!-- Main -->
+	<section id="main" class="wrapper">
+		<div class="inner">
+			<div class="content">
+				{{ content }}
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			{% include footer.html %}
+		</div>
+	</footer>
+	
+	{% include scripts.html %}
+
+</body>
+
 </html>

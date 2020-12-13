@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-    <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="HandheldFriendly" content="True">
     <link rel="icon" sizes="192x192" href="https://mgrove.uk/logo.png">
 
@@ -14,323 +15,285 @@
     <!-- add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="BBC Young Reporter Article Creator | Matthew Grove">
+    <meta name="apple-mobile-web-app-title" content="BBC Young Reporter Article Creator">
     <link rel="apple-touch-icon-precomposed" href="https://mgrove.uk/logo.png">
 
     <!-- tile icon & colour for Windows 8 -->
     <meta name="msapplication-TileImage" content="https://mgrove.uk/logo.png">
-    <meta name="msapplication-TileColor" content="#d84315">
+    <meta name="msapplication-TileColor" content="#26174e">
 
+    <!-- page info -->
     <title>BBC Young Reporter Article Creator | Matthew Grove</title>
-    <meta name="description" content="A simple tool to create markdown files from news articles, for uploading to the Reading School BBC Young Reporter website - by Matthew Grove">
+    <meta name="description" content="A simple tool to create markdown files from news articles, for uploading to the Reading School BBC Young Reporter website | by Matthew Grove">
+    <meta name="keywords" content="" />
 
-    <!-- import Roboto (font) -->
-    <link href="/css/roboto.css" rel="stylesheet" type="text/css">
-
-    <!-- import jQuery -->
-    <script src="/js/jquery.min.js" type="text/javascript"></script>
-
-    <!-- import cookie JavaScript -->
-    <script src="/js/cookies.js" type="text/javascript"></script>
-
-    <!-- import Material Design components & icons -->
-    <link href="/css/material-components-web.min.css" rel="stylesheet" type="text/css">
-    <link href="/css/material_icons.css" rel="stylesheet" type="text/css">
-    <script src="/js/material-components-web.min.js" type="text/javascript"></script>
-
-    <!-- import local styling & scripts -->
-    <script src="/js/global.js" type="text/javascript"></script>
-    <link href="/css/global.css" rel="stylesheet" type="text/css">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/assets/css/main.css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124505000-1" type="text/javascript"></script>
     <script type="text/javascript">
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'UA-124505000-1');
     </script>
 </head>
 
-    <body>
-        <!-- cookie notice is included automatically -->
-        <div id="cookies">
+<script src="/assets/js/jquery.min.js"></script>
+
+<body class="is-preload">
+	
+	<!-- Header -->
+<header id="header">
+	<img src="https://mgrove.uk/logo-clear-square.png" class="logo" />
+	<a class="logo" href="/">Matthew Grove</a>
+	<nav>
+		<a href="#menu">Menu</a>
+	</nav>
+</header>
+
+<!-- Nav -->
+<nav id="menu">
+	<ul class="links">
+		<li><a href="/" >Home</a></li>
+
+		
+		
+		
+		
+		
+		<li><a href="/young-reporter/"  class="current-page-link"
+				>BBC Young Reporter Article Creator</a></li>
+		
+		
+		
+		<li><a href="/comsci/" >ComSci</a></li>
+		
+		
+		
+		
+		
+		<li><a href="/luhn-algorithm/" >Luhn Algorithm</a></li>
+		
+		
+		
+		<li><a href="/site-theme/" >Site Theme</a></li>
+		
+		
+	</ul>
+</nav>
+
+	<div id="cookies">
     <p>Just to let you know, I use cookies on my site.</p>
     <p><a href="javascript:void(0);" id="close-cookies">OK</a></p>
 </div>
 
+	<!-- Heading -->
+	<div id="heading">
+		<h1>BBC Young Reporter Article Creator</h1>
+	</div>
 
-        <!-- content of navbar is included automatically -->
-        <aside class="navbar-insert mdc-drawer mdc-drawer--modal">
-    <div class="mdc-drawer__content">
-        <div style="margin: 15px;text-align:center;">
-            <img src="https://mgrove.uk/logo.png" style="width: 90%;"/>
-        </div>
-        <div class="mdc-list">
-            <a class="mdc-list-item" href="https://blog.mgrove.uk">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">assignment</i>
-                <span class="mdc-list-item__text">My Blog</span>
-            </a>
-            <a class="mdc-list-item" href="/">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
-                <span class="mdc-list-item__text">Home Page</span>
-            </a>
-            
-            
-            <a class="mdc-list-item" href="/comsci/">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">computer</i>
-                <span class="mdc-list-item__text">ComSci</span>
-            </a>
-            
-            
-            
-            <a class="mdc-list-item" href="/luhn-algorithm/">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">credit_card</i>
-                <span class="mdc-list-item__text">Luhn Algorithm</span>
-            </a>
-            
-            
-            
-            <a class="mdc-list-item" href="/young-reporter/">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">article</i>
-                <span class="mdc-list-item__text">BBC Young Reporter Article Creator</span>
-            </a>
-            
-            
-            
-            
-            
-            <a class="mdc-list-item" href="/computer-science-blog/">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">code</i>
-                <span class="mdc-list-item__text">GCSE Computer Science Blog</span>
-            </a>
-            
-            
-            
-            
-        </div>
-    </div>
-</aside>
+	<!-- Main -->
+	<section id="main" class="wrapper">
+		<div class="inner">
+			<div class="content">
+				<p>Fill in the fields below, and then click the <em>download</em> button to create a file to be uploaded to Reading School’s BBC Young Reporter website.</p>
 
-<div class="mdc-drawer-scrim"></div>
-
-
-        <div class="mdc-drawer-app-content">
-            <header class="mdc-top-app-bar app-bar" id="app-bar">
-                <div class="mdc-top-app-bar__row">
-                    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                        <a href="javascript:void(0);" class="demo-mensu material-icons mdc-top-app-bar__navigation-icon">menu</a>
-                        <span class="mdc-top-app-bar__title">BBC Young Reporter Article Creator | Matthew Grove</span>
-                    </section>
-                </div>
-            </header>
-
-            <main class="main-content" id="main-content">
-                <div class="mdc-top-app-bar--fixed-adjust">
-                    <h1 id="reading-school-bbc-young-reporter-article-compiler">Reading School BBC Young Reporter Article Compiler</h1>
-
-<p>Fill in the fields below, and then click the <em>download</em> button to create a file to be uploaded to Reading School’s BBC Young Reporter website.</p>
-
-<p>Give the authors’ names in the format <code class="highlighter-rouge">First_Name Last_Initial</code>, and separate multiple authors with a comma - e.g. <code class="highlighter-rouge">John D, Emma S</code></p>
+<p>Give the authors’ names in the format <code class="language-plaintext highlighter-rouge">First_Name Last_Initial</code>, and separate multiple authors with a comma - e.g. <code class="language-plaintext highlighter-rouge">John D, Emma S</code></p>
 
 <ul>
-  <li>If there are any headings inside your article, please place <code class="highlighter-rouge"># </code> in front of them</li>
-  <li>For subtitles, use <code class="highlighter-rouge">## </code>, as so on for smaller headings, up to and including <code class="highlighter-rouge">###### </code></li>
-  <li>For bullet points, use <code class="highlighter-rouge">* </code>, and for indented bullets, increase the indent using tab</li>
-  <li>For numbered lists, use the numbers/letters: e.g. <code class="highlighter-rouge">1. </code></li>
+  <li>If there are any headings inside your article, please place <code class="language-plaintext highlighter-rouge"># </code> in front of them.</li>
+  <li>For subtitles, use <code class="language-plaintext highlighter-rouge">## </code>, as so on for smaller headings, up to and including <code class="language-plaintext highlighter-rouge">###### </code>.</li>
+  <li>For bullet points, use <code class="language-plaintext highlighter-rouge">* </code>, and for indented bullets, increase the indent using the tab button on your keyboard.</li>
+  <li>For numbered lists, use the numbers/letters: e.g. <code class="language-plaintext highlighter-rouge">1. </code>.</li>
 </ul>
 
 <p>Note the requirement for spaces after each of the above items - for example:</p>
 
-<p><code class="highlighter-rouge">### My Heading</code></p>
+<pre><code>### My Heading
 
-<p><code class="highlighter-rouge">* Numbered item</code></p>
+* Numbered item</code></pre>
 
 <p>will produce:</p>
 
-<h3 id="my-heading">My Heading</h3>
+<blockquote>
+<h3>My Heading</h3>
 
 <ol>
-  <li>Numbered item</li>
+    <li>Numbered item</li>
 </ol>
 
-<p>However, the below don’t need spaces:</p>
+</blockquote>
+
+<p>Other formatting can be done with the following:</p>
 
 <ul>
-  <li>For italics, use <code class="highlighter-rouge">*my italic text*</code></li>
-  <li>For bold, use <code class="highlighter-rouge">**my bold text**</code></li>
-  <li>For bold and italics, use <code class="highlighter-rouge">***my bold, italic text***</code></li>
-  <li>For links, use <code class="highlighter-rouge">[text to show in article](URL)</code></li>
-  <li>To include an extra image (besides the cover image), use:</li>
+  <li>For italics, use <code class="language-plaintext highlighter-rouge">*my italic text*</code></li>
+  <li>For bold, use <code class="language-plaintext highlighter-rouge">**my bold text**</code></li>
+  <li>For bold and italics, use <code class="language-plaintext highlighter-rouge">***my bold, italic text***</code></li>
+  <li>For links, use <code class="language-plaintext highlighter-rouge">[text to show in article](URL)</code></li>
+  <li>To include an extra image (besides the cover image), use</li>
 </ul>
+<pre><code>{% include image.html id=ID_OF_IMAGE caption="IMAGE_CAPTION" copyright="IMAGE_COPYRIGHT" %}</code></pre>
+<p>replacing <code class="language-plaintext highlighter-rouge">ID_OF_IMAGE</code> with a unique ID for the image in your article - start at 1 for the first image (excluding the cover image).</p>
 
-<p><code class="highlighter-rouge">{% include image.html id=ID_OF_IMAGE caption="IMAGE_CAPTION" copyright="IMAGE_COPYRIGHT" %}</code></p>
+<p>The cover image for your article must be a JPEG image, and have the <code class="language-plaintext highlighter-rouge">jpg</code> file extension. If your image is a PNG, you can <a href="https://png2jpg.com/">convert it using an online tool</a>. The file name must also be the same as your article’s file name. This will be provided to you when you download the file from this page. E.g. if the file you download from this page is <code class="language-plaintext highlighter-rouge">news-article.md</code> then your cover image must be <code class="language-plaintext highlighter-rouge">news-article.jpg</code> (capital letters <strong>DO</strong> matter).</p>
 
-<p>replacing <code class="highlighter-rouge">ID_OF_IMAGE</code> with a unique ID for the image in your article - start at 1 for the first image (excluding the cover image).</p>
+<p>Any extra images for your article must be in the format: <code class="language-plaintext highlighter-rouge">ARTICLE_FILE_NAME--extra-IMAGE_ID.jpg</code>, where you replace <code class="language-plaintext highlighter-rouge">ARTICLE_FILE_NAME</code> with the file name you used for the cover image, and <code class="language-plaintext highlighter-rouge">IMAGE_ID</code> with the ID you gave the image when you inserted it into your article’s body, as seen above. E.g.: <code class="language-plaintext highlighter-rouge">news-article--extra-1.jpg</code> .</p>
 
-<p>The cover image for your article must be a JPEG image, and have the <code class="highlighter-rouge">jpg</code> file extension. If your image is a PNG, you can convert it using an online tool. The file name must also be the same as your article’s file name. This will be provided to you when you download the file from this page. E.g. if the file you download from this page is <code class="highlighter-rouge">news-article.md</code> then your cover image must be <code class="highlighter-rouge">news-article.jpg</code> (capital letters <strong>DO</strong> matter).</p>
-
-<p>Any extra images for your article must be in the format:</p>
-
-<p><code class="highlighter-rouge">ARTICLE_FILE_NAME--extra-IMAGE_ID.jpg</code>, e.g. <code class="highlighter-rouge">news-article--extra-1.jpg</code></p>
-
-<p>where you replace <code class="highlighter-rouge">ARTICLE_FILE_NAME</code> with the file name you used for the cover image, and <code class="highlighter-rouge">IMAGE_ID</code> with the ID you gave the image when you inserted it into your article’s body, as seen above.</p>
-
-<div class="mdc-text-field-container">
-    <div class="mdc-text-field mdc-text-field--outlined" data-mdc-auto-init="MDCTextField">
-        <input type="text" class="mdc-text-field__input" id="article-title" />
-        <label class="mdc-floating-label">Article title</label>
-        <div class="mdc-notched-outline">
-            <svg><path class="mdc-notched-outline__path" /></svg>
+<form onreset="if (!($('form a.submit').hasClass('disabled'))) $('form a.submit').addClass('disabled');">
+    <div class="row gtr-uniform">
+        <div class="col-6 col-12-xsmall">
+            <input type="text" id="headline" placeholder="Headline" />
         </div>
-        <div class="mdc-notched-outline__idle"></div>
-    </div>
-    <div class="mdc-text-field mdc-text-field--outlined" data-mdc-auto-init="MDCTextField">
-        <input type="text" class="mdc-text-field__input" id="authors" />
-        <label class="mdc-floating-label">Authors</label>
-        <div class="mdc-notched-outline">
-            <svg><path class="mdc-notched-outline__path" /></svg>
+        <div class="col-6 col-12-xsmall">
+            <input type="text" id="authors" placeholder="Authors" />
         </div>
-        <div class="mdc-notched-outline__idle"></div>
-    </div>
-    <div class="mdc-text-field mdc-text-field--outlined" data-mdc-auto-init="MDCTextField">
-        <input type="text" class="mdc-text-field__input" id="image-caption" />
-        <label class="mdc-floating-label">Image caption</label>
-        <div class="mdc-notched-outline">
-            <svg><path class="mdc-notched-outline__path" /></svg>
+        <div class="col-6 col-12-xsmall">
+            <input type="text" id="image-caption" placeholder="Image caption" />
         </div>
-        <div class="mdc-notched-outline__idle"></div>
-    </div>
-    <div class="mdc-text-field mdc-text-field--outlined" data-mdc-auto-init="MDCTextField">
-        <input type="text" class="mdc-text-field__input" id="image-copyright" />
-        <label class="mdc-floating-label">Image copyright</label>
-        <div class="mdc-notched-outline">
-            <svg><path class="mdc-notched-outline__path" /></svg>
+        <div class="col-6 col-12-xsmall">
+            <input type="text" id="image-copyright" placeholder="Image copyright" />
         </div>
-        <div class="mdc-notched-outline__idle"></div>
-    </div>
-    <div class="mdc-text-field mdc-text-field--outlined" data-mdc-auto-init="MDCTextField">
-        <input type="text" class="mdc-text-field__input" id="article-description" />
-        <label class="mdc-floating-label">Article description</label>
-        <div class="mdc-notched-outline">
-            <svg><path class="mdc-notched-outline__path" /></svg>
+        <!-- Break -->
+        <div class="col-12">
+            <textarea id="article-description" placeholder="Article description" rows="2"></textarea>
         </div>
-        <div class="mdc-notched-outline__idle"></div>
-    </div>
-	<br />
-	<div class="mdc-text-field mdc-text-field--outlined mdc-text-field--textarea mdc-text-field--no-label" data-mdc-auto-init="MDCTextField">
-        <textarea class="mdc-text-field__input" rows="8" aria-label="Label" id="article-content" placeholder="Article content"></textarea>
-        <div class="mdc-notched-outline">
-            <svg><path class="mdc-notched-outline__path" /></svg>
+        <div class="col-12">
+            <textarea id="article-content" placeholder="Article content" rows="20"></textarea>
         </div>
-        <div class="mdc-notched-outline__idle"></div>
+        <!-- Break -->
+        <div class="col-12">
+            <ul class="actions">
+                <li><a href="javascript:downloadFile();" class="submit button primary icon fa-download">Download</a></li>
+                <li><input type="reset" value="Reset" /></li>
+            </ul>
+        </div>
     </div>
-</div>
-
-<p><button class="download_button mdc-button mdc-button--outlined" onclick="downloadFile();" data-mdc-auto-init="MDCRipple">
-    <i class="material-icons mdc-button__icon">cloud_download</i>
-    Download article
-</button></p>
-
-<style>
-body {
-	text-align: left;
-}
-
-.mdc-text-field--textarea .mdc-text-field__input {
-	padding-top: 16px;
-}
-.mdc-text-field--textarea:not(.mdc-text-field--disabled) {
-	border-color: rgba(0,0,0,0.12);
-}
-
-#article-content::placeholder {
-	color: rgba(0,0,0,0.63);
-}
-
-.mdc-text-field {
-	min-width: 500px;
-}
-
-.mdc-text-field--textarea.mdc-text-field--focussed .mdc-text-field__input {
-	color: black;
-}
-
-.mdc-text-field--textarea .mdc-text-field__input {
-	content: "Article content";
-}
-
-.mdc-text-field--textarea .mdc-text-field__input:focus {
-	content: "";
-}
-
-.mdc-text-field-container {
-	max-width: 1508px;
-}
-
-@media screen and (max-width: 1550px) {
-	.mdc-text-field-container {
-		max-width: 1004px;
-	}
-}
-
-@media screen and (max-width: 1045px) {
-	.mdc-text-field-container {
-		max-width: 502px;
-	}
-}
-
-</style>
+</form>
 
 <script>
-function downloadFile() {
-	if (document.getElementById("article-title").value != "" && document.getElementById("article-title").value != "" && document.getElementById("authors").value != "" && document.getElementById("image-caption").value != "" && document.getElementById("image-copyright").value != "" && document.getElementById("article-description").value != "") {
-		var today = new Date();
-		var dd = String(today.getDate()).padStart(2, '0');
-		var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-		var yyyy = today.getFullYear();
-		var hours = today.getHours();
-		var minutes = today.getMinutes();
-		var date = yyyy + "-" + mm + "-" + dd + " " + hours + ":" + minutes
+function checkFieldStatuses() {
+    var input_elements = $("form input[type='text']");
+    var textarea_elements = $("form textarea");
+    var elements = $.merge($("form input[type='text']"), $("form textarea"));
+    any_empty = false;
+    for (var i = 0, element; element = elements[i++];) {
+        if (element.value === "") {
+            any_empty = true;
+            break;
+        }
+    }
+    if (!any_empty && $("form a.submit").hasClass("disabled")) {
+        $("form a.submit").removeClass("disabled");
+        return "removed class";
+    } else if (any_empty && !($("form a.submit").hasClass("disabled"))) {
+        $("form a.submit").addClass("disabled");
+        return "added class";
+    }
+}
 
-		var file_name = document.getElementById("article-title").value.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").replace(/\s{2,}/g," ").replace(/\s+/g,"-").toLowerCase() + ".md";
-		var text = `---
-title: '` + document.getElementById("article-title").value + `'
+checkFieldStatuses();
+document.addEventListener("mouseup", function(event){
+    checkFieldStatuses();
+}, true);
+$("form").keyup(function(event){
+    checkFieldStatuses();
+});
+
+function downloadFile(){
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0');
+    var yyyy = today.getFullYear();
+    var hours = today.getHours();
+    var minutes = today.getMinutes();
+    var date = yyyy + "-" + mm + "-" + dd + " " + hours + ":" + minutes
+
+    var file_name = $("#headline")[0].value.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").replace(/\s{2,}/g," ").replace(/\s+/g,"-").toLowerCase() + ".md";
+    var text = `---
+title: '` + $("#headline")[0].value + `'
 date: ` + date + `
-authors: ` + document.getElementById("authors").value + `
-image-caption: ` + document.getElementById("image-caption").value + `
-copyright: ` + document.getElementById("image-copyright").value + `
-description: ` + document.getElementById("article-description").value + `
+authors: ` + $("#authors")[0].value + `
+image-caption: ` + $("#image-caption")[0].value + `
+copyright: ` + $("#image-copyright")[0].value + `
+description: ` + $("#article-description")[0].value + `
 ---
 
-` + document.getElementById("article-content").value;
-	
-		var element = document.createElement("a");
-		element.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(text));
-		element.setAttribute("download", file_name);
+` + $("#article-content")[0].value;
 
-		element.style.display = "none";
-		document.body.appendChild(element);
+    var element = document.createElement("a");
+    element.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(text));
+    element.setAttribute("download", file_name);
 
-		element.click();
+    element.style.display = "none";
+    document.body.appendChild(element);
 
-		document.body.removeChild(element);
-	}
+    element.click();
+
+    document.body.removeChild(element);
 }
+
+$("form input[type='text']").keypress(function(event) {
+    if (event.defaultPrevented) {
+        return;
+    }
+
+    if (event.key === "Enter") {
+        event.preventDefault();
+    }
+});
 </script>
 
 
-                    <!-- link to source code on GitHub -->
-                    <a href="https://github.com/mgrove36/demo-code/tree/master/young-reporter/" class="source-code-link mdc-fab mdc-fab--extended" data-mdc-auto-init="MDCRipple">
-                        <span class="material-icons mdc-fab__icon">rate_review</span>
-                        <span class="mdc-fab__label">View on GitHub</span>
-                    </a>
-                </div>
-            </main>
-            <footer>
-    &copy; Matthew Grove 2020
-</footer>
+			</div>
+		</div>
+	</section>
 
-        </div>
-    </body>
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<div class="content">
+    <section>
+        <h3>Matthew Grove</h3>
+        <p>Software engineer & amateur photographer from Surrey, UK.</p>
+        <br>
+        <a href="https://github.com/mgrove36/demo-code/tree/master/young-reporter/">View this page on
+            GitHub.</a>
+
+    </section>
+    <section>
+        <h4>Other Links</h4>
+        <ul class="plain">
+            <li><a href="https://instagram.com/mgrove36.photos" target="_blank"><i
+                        class="icon fa-camera">&nbsp;</i>Photography</a></li>
+            <li><a href="https://instagram.com/morganandmeganbichons" target="_blank"><i
+                        class="icon fa-paw">&nbsp;</i>Dogs</a></li>
+            <li><a href="mailto:me@mgrove.uk"><i class="icon fa-envelope">&nbsp;</i>Email me</a></li>
+        </ul>
+    </section>
+    <section>
+        <h4>Social Media</h4>
+        <ul class="plain">
+            <li><a href="https://github.com/mgrove36" target="_blank"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+            <li><a href="https://twitter.com/mgrove36" target="_blank"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+            <li><a href="https://instagram.com/mgrove36" target="_blank"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+            <li><a href="https://facebook.com/mgrove36" target="_blank"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+        </ul>
+    </section>
+</div>
+<div class="copyright">
+    &copy; Matthew Grove 2020.
+</div>
+		</div>
+	</footer>
+	
+	<!-- Scripts -->
+<script src="/assets/js/cookies.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
+
+</body>
+
 </html>
