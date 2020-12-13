@@ -30,7 +30,8 @@
 			<div class="highlights">
 
 				{% for project in all_pages %}
-				{% if project.url != "/" and project.url != "/index.html" and project.url != "/sitemap.xml" %}
+				{% assign project_url_end = project.url | slice: -4, -1 %}
+				{% if project.url != "/" and project.url != "/index.html" and project.url != "/sitemap.xml" and project_url_end != ".css" %}
 				<section>
 					<div class="content">
 						<header>
