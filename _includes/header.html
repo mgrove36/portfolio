@@ -14,11 +14,10 @@
 		<li><a href="https://blog.mgrove.uk">Blog</a></li>
 
 		{% assign all_pages = site.pages | sort: "title" %}
-		{% for project in all_pages %}
-		{% assign project_url_end = project.url | slice: -4, -1 %}
+		{% for project in all_pages %}{% assign project_url_end = project.url| slice: -4, 4 %}
 		{% if project.url != "/" and project.url != "/index.html" and project.url != "/sitemap.xml" and project_url_end != ".css" %}
 		<li><a href="{{ project.url | relative_url }}" {% if project.url == page.url %} class="current-page-link"
-				{% endif %}>{{ project.title }}</a></li>
+				{% endif %}>{{project_url_end}} {{project.url}} {{ project.title }}</a></li>
 		{% endif %}
 		{% endfor %}
 	</ul>
