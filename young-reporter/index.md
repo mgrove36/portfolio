@@ -5,6 +5,19 @@ layout: default
 icon: comment
 ---
 
+### Prerequisites
+
+Before you begin, ensure you have, as a minimum:
+* a headline,
+* the name(s) of the author(s),
+* a header image, which will be shown behind the headline (so the content of this image can't be vital, like a graph),
+* a caption for your header image,
+* the copyright attribution for your header image,
+* a brief description (one or two short sentences) of your article, and
+* your article content.
+
+<hr>
+
 ### Instructions
 
 Fill in the fields below, and then click the *download* button to generate a file to be uploaded to Reading School's BBC Young Reporter website.
