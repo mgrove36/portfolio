@@ -6,20 +6,14 @@ search: exclude
 <?xml version="1.0" encoding="URF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     {% for page in site.pages %}
+    {% assign page_url_end = page.url| slice: -4, 4 %}
+    {% if page.url != "/sitemap.xml" and page_url_end != ".css" %}
     <url>
         <loc>{{ page.url }}</loc>
         <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
-    {% endfor %}
-    
-    {% for post in site.posts %}
-    <url>
-        <loc>{{ post.url }}</loc>
-        <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
+    {% endif %}
     {% endfor %}
 </urlset>
