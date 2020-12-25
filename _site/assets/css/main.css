@@ -2079,7 +2079,7 @@ ul.icons {
     opacity: 1; }
 
 /* CTA */
-#cta {
+.cta {
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed;
   background-image: linear-gradient(135deg, rgba(var(--background-colour-dark-rgb), 0.5), rgba(var(--background-colour-dark-rgb), 0.9)), url(../../images/cta01.jpg);
@@ -2089,142 +2089,142 @@ ul.icons {
   position: relative;
   text-align: center;
   z-index: 1; }
-  #cta input, #cta select, #cta textarea {
+  .cta input, .cta select, .cta textarea {
     color: var(--button-text-colour); }
-  #cta a {
+  .cta a {
     color: var(--button-text-colour); }
-  #cta strong, #cta b {
+  .cta strong, .cta b {
     color: var(--button-text-colour); }
-  #cta h1, #cta h2, #cta h3, #cta h4, #cta h5, #cta h6 {
+  .cta h1, .cta h2, .cta h3, .cta h4, .cta h5, .cta h6 {
     color: var(--button-text-colour); }
-  #cta blockquote {
+  .cta blockquote {
     border-left-color: rgba(255, 255, 255, 0.25); }
-  #cta code {
+  .cta code {
     background: rgba(255, 255, 255, 0.075);
     border-color: rgba(255, 255, 255, 0.25); }
-  #cta hr {
+  .cta hr {
     border-bottom-color: rgba(255, 255, 255, 0.25); }
-  #cta input[type="submit"],
-  #cta input[type="reset"],
-  #cta input[type="button"],
-  #cta button,
-  #cta .button {
+  .cta input[type="submit"],
+  .cta input[type="reset"],
+  .cta input[type="button"],
+  .cta button,
+  .cta .button {
     background-color: transparent;
     box-shadow: inset 0 0 0 1px var(--button-text-colour);
     color: var(--button-text-colour) !important; }
-    #cta input[type="submit"]:hover,
-    #cta input[type="reset"]:hover,
-    #cta input[type="button"]:hover,
-    #cta button:hover,
-    #cta .button:hover {
+    .cta input[type="submit"]:hover,
+    .cta input[type="reset"]:hover,
+    .cta input[type="button"]:hover,
+    .cta button:hover,
+    .cta .button:hover {
       background-color: rgba(255, 255, 255, 0.1); }
-      #cta input[type="submit"]:hover:active,
-      #cta input[type="reset"]:hover:active,
-      #cta input[type="button"]:hover:active,
-      #cta button:hover:active,
-      #cta .button:hover:active {
+      .cta input[type="submit"]:hover:active,
+      .cta input[type="reset"]:hover:active,
+      .cta input[type="button"]:hover:active,
+      .cta button:hover:active,
+      .cta .button:hover:active {
         background-color: rgba(255, 255, 255, 0.25); }
-    #cta input[type="submit"].primary,
-    #cta input[type="reset"].primary,
-    #cta input[type="button"].primary,
-    #cta button.primary,
-    #cta .button.primary {
+    .cta input[type="submit"].primary,
+    .cta input[type="reset"].primary,
+    .cta input[type="button"].primary,
+    .cta button.primary,
+    .cta .button.primary {
       box-shadow: none;
       background-color: var(--button-text-colour);
       color: var(--secondary-colour) !important; }
-      #cta input[type="submit"].primary:hover,
-      #cta input[type="reset"].primary:hover,
-      #cta input[type="button"].primary:hover,
-      #cta button.primary:hover,
-      #cta .button.primary:hover {
+      .cta input[type="submit"].primary:hover,
+      .cta input[type="reset"].primary:hover,
+      .cta input[type="button"].primary:hover,
+      .cta button.primary:hover,
+      .cta .button.primary:hover {
         background-color: rgba(255, 255, 255, 0.875);
         box-shadow: none; }
-        #cta input[type="submit"].primary:hover:active,
-        #cta input[type="reset"].primary:hover:active,
-        #cta input[type="button"].primary:hover:active,
-        #cta button.primary:hover:active,
-        #cta .button.primary:hover:active {
+        .cta input[type="submit"].primary:hover:active,
+        .cta input[type="reset"].primary:hover:active,
+        .cta input[type="button"].primary:hover:active,
+        .cta button.primary:hover:active,
+        .cta .button.primary:hover:active {
           background-color: rgba(255, 255, 255, 0.5); }
-  #cta label {
+  .cta label {
     color: var(--button-text-colour); }
-  #cta input[type="text"],
-  #cta input[type="number"],
-  #cta input[type="password"],
-  #cta input[type="email"],
-  #cta input[type="tel"],
-  #cta input[type="search"],
-  #cta input[type="url"],
-  #cta select,
-  #cta textarea {
+  .cta input[type="text"],
+  .cta input[type="number"],
+  .cta input[type="password"],
+  .cta input[type="email"],
+  .cta input[type="tel"],
+  .cta input[type="search"],
+  .cta input[type="url"],
+  .cta select,
+  .cta textarea {
     background-color: rgba(255, 255, 255, 0.075);
     border-color: rgba(255, 255, 255, 0.25); }
-    #cta input[type="text"]:focus,
-    #cta input[type="number"]:focus,
-    #cta input[type="password"]:focus,
-    #cta input[type="email"]:focus,
-    #cta input[type="tel"]:focus,
-    #cta input[type="search"]:focus,
-    #cta input[type="url"]:focus,
-    #cta select:focus,
-    #cta textarea:focus {
+    .cta input[type="text"]:focus,
+    .cta input[type="number"]:focus,
+    .cta input[type="password"]:focus,
+    .cta input[type="email"]:focus,
+    .cta input[type="tel"]:focus,
+    .cta input[type="search"]:focus,
+    .cta input[type="url"]:focus,
+    .cta select:focus,
+    .cta textarea:focus {
       border-color: var(--button-text-colour);
       box-shadow: 0 0 0 1px var(--button-text-colour); }
-  #cta select {
+  .cta select {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.25)' /%3E%3C/svg%3E"); }
-    #cta select option {
+    .cta select option {
       color: rgba(255, 255, 255, 0.75);
       background-color: var(--secondary-colour); }
-  #cta input[type="checkbox"] + label,
-  #cta input[type="radio"] + label {
+  .cta input[type="checkbox"] + label,
+  .cta input[type="radio"] + label {
     color: rgba(255, 255, 255, 0.75); }
-    #cta input[type="checkbox"] + label:before,
-    #cta input[type="radio"] + label:before {
+    .cta input[type="checkbox"] + label:before,
+    .cta input[type="radio"] + label:before {
       background: rgba(255, 255, 255, 0.075);
       border-color: rgba(255, 255, 255, 0.25); }
-  #cta input[type="checkbox"]:checked + label:before,
-  #cta input[type="radio"]:checked + label:before {
+  .cta input[type="checkbox"]:checked + label:before,
+  .cta input[type="radio"]:checked + label:before {
     background-color: var(--button-text-colour);
     border-color: var(--button-text-colour);
     color: var(--secondary-colour); }
-  #cta input[type="checkbox"]:focus + label:before,
-  #cta input[type="radio"]:focus + label:before {
+  .cta input[type="checkbox"]:focus + label:before,
+  .cta input[type="radio"]:focus + label:before {
     border-color: var(--button-text-colour);
     box-shadow: 0 0 0 1px var(--button-text-colour); }
-  #cta ::-webkit-input-placeholder {
+  .cta ::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.4) !important; }
-  #cta :-moz-placeholder {
+  .cta :-moz-placeholder {
     color: rgba(255, 255, 255, 0.4) !important; }
-  #cta ::-moz-placeholder {
+  .cta ::-moz-placeholder {
     color: rgba(255, 255, 255, 0.4) !important; }
-  #cta :-ms-input-placeholder {
+  .cta :-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.4) !important; }
-  #cta ul.alt li {
+  .cta ul.alt li {
     border-top-color: rgba(255, 255, 255, 0.25); }
-  #cta table tbody tr {
+  .cta table tbody tr {
     border-color: rgba(255, 255, 255, 0.25); }
-    #cta table tbody tr:nth-child(2n + 1) {
+    .cta table tbody tr:nth-child(2n + 1) {
       background-color: rgba(255, 255, 255, 0.075); }
-  #cta table th {
+  .cta table th {
     color: var(--button-text-colour); }
-  #cta table thead {
+  .cta table thead {
     border-bottom-color: rgba(255, 255, 255, 0.25); }
-  #cta table tfoot {
+  .cta table tfoot {
     border-top-color: rgba(255, 255, 255, 0.25); }
-  #cta table.alt tbody tr td {
+  .cta table.alt tbody tr td {
     border-color: rgba(255, 255, 255, 0.25); }
-  #cta .highlights .content {
+  .cta .highlights .content {
     background: var(--secondary-colour);
     box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
-  #cta .testimonials .content {
+  .cta .testimonials .content {
     background: var(--secondary-colour);
     box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
-    #cta .testimonials .content .credit strong {
+    .cta .testimonials .content .credit strong {
       color: var(--secondary-colour); }
-  #cta .inner {
+  .cta .inner {
     position: relative;
     z-index: 3; }
   @media screen and (max-width: 980px) {
-    #cta {
+    .cta {
       background-attachment: scroll; } }
 
 /* Footer */
