@@ -53,12 +53,27 @@ Other formatting can be done with the following:
 * For bold and italics, use `***my bold, italic text***`.
 * For links, use `[text to show in article](URL)`.
 * To include an extra image (besides the cover image), use:
-<pre><code>{% raw %}{% include image.html id=ID_OF_IMAGE caption="IMAGE_CAPTION" copyright="IMAGE_COPYRIGHT" %}{% endraw %}</code></pre>
-replacing `ID_OF_IMAGE` with a unique ID for the image in your article - start at 1 for the first image (excluding the cover image).
+<dl>
+<dd>
+<pre><code>{% raw %}{% include image.html caption="IMAGE_CAPTION" copyright="IMAGE_COPYRIGHT" %}{% endraw %}</code></pre>
+<p>Replace `IMAGE_CAPTION` with a caption for the image, and `IMAGE COPYRIGHT` with the copyright owner. E.g.:</p>
+<pre><code>{% raw %}{% include image.html caption="Test image caption" copyright="Reading School" %}{% endraw %}</code></pre>
+</dd>
+</dl>
+
+* To include a video, upload it to YouTube and then use:
+<dl>
+<dd>
+<pre><code>{% raw %}{% include video.html id="VIDEO_ID" %}{% endraw %}</code></pre>
+<p>Replace `VIDEO_ID` with the YouTube video ID (e.g. for <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>, the video ID is dQw4w9WgXcQ). An example:</p>
+<pre><code>{% raw %}{% include video.html id="dQw4w9WgXcQ" %}{% endraw %}</code></pre>
+</dd>
+</dl>
+
 
 The cover image for your article must be a JPEG image, and have the `jpg` file extension. If your image is a PNG, you can [convert it using an online tool](https://png2jpg.com/). The file name must also be the same as your article's file name. This will be provided to you when you download the file from this page. E.g. if the file you download from this page is `news-article.md` then your cover image must be `news-article.jpg` (capital letters **DO** matter).
 
-Any extra images for your article must be in the format: `ARTICLE_FILE_NAME--extra-IMAGE_ID.jpg`, where you replace `ARTICLE_FILE_NAME` with the file name you used for the cover image, and `IMAGE_ID` with the ID you gave the image when you inserted it into your article's body, as seen above. E.g.: `news-article--extra-1.jpg`.
+Any extra images for your article must be in the format: `ARTICLE_FILE_NAME--extra-IMAGE_ID.jpg`, where you replace `ARTICLE_FILE_NAME` with the file name you used for the cover image, and `IMAGE_ID` with a unique ID for the image - start at 1 for the first image in your article (excluding the cover image). E.g.: `news-article--extra-1.jpg`.
 
 <hr>
 

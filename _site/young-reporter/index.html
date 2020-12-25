@@ -159,12 +159,28 @@
   <li>For links, use <code class="language-plaintext highlighter-rouge">[text to show in article](URL)</code>.</li>
   <li>To include an extra image (besides the cover image), use:</li>
 </ul>
-<pre><code>{% include image.html id=ID_OF_IMAGE caption="IMAGE_CAPTION" copyright="IMAGE_COPYRIGHT" %}</code></pre>
-<p>replacing <code class="language-plaintext highlighter-rouge">ID_OF_IMAGE</code> with a unique ID for the image in your article - start at 1 for the first image (excluding the cover image).</p>
+<dl>
+<dd>
+<pre><code>{% include image.html caption="IMAGE_CAPTION" copyright="IMAGE_COPYRIGHT" %}</code></pre>
+<p>Replace `IMAGE_CAPTION` with a caption for the image, and `IMAGE COPYRIGHT` with the copyright owner. E.g.:</p>
+<pre><code>{% include image.html caption="Test image caption" copyright="Reading School" %}</code></pre>
+</dd>
+</dl>
+
+<ul>
+  <li>To include a video, upload it to YouTube and then use:</li>
+</ul>
+<dl>
+<dd>
+<pre><code>{% include video.html id="VIDEO_ID" %}</code></pre>
+<p>Replace `VIDEO_ID` with the YouTube video ID (e.g. for <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>, the video ID is dQw4w9WgXcQ). An example:</p>
+<pre><code>{% include video.html id="dQw4w9WgXcQ" %}</code></pre>
+</dd>
+</dl>
 
 <p>The cover image for your article must be a JPEG image, and have the <code class="language-plaintext highlighter-rouge">jpg</code> file extension. If your image is a PNG, you can <a href="https://png2jpg.com/">convert it using an online tool</a>. The file name must also be the same as your article’s file name. This will be provided to you when you download the file from this page. E.g. if the file you download from this page is <code class="language-plaintext highlighter-rouge">news-article.md</code> then your cover image must be <code class="language-plaintext highlighter-rouge">news-article.jpg</code> (capital letters <strong>DO</strong> matter).</p>
 
-<p>Any extra images for your article must be in the format: <code class="language-plaintext highlighter-rouge">ARTICLE_FILE_NAME--extra-IMAGE_ID.jpg</code>, where you replace <code class="language-plaintext highlighter-rouge">ARTICLE_FILE_NAME</code> with the file name you used for the cover image, and <code class="language-plaintext highlighter-rouge">IMAGE_ID</code> with the ID you gave the image when you inserted it into your article’s body, as seen above. E.g.: <code class="language-plaintext highlighter-rouge">news-article--extra-1.jpg</code>.</p>
+<p>Any extra images for your article must be in the format: <code class="language-plaintext highlighter-rouge">ARTICLE_FILE_NAME--extra-IMAGE_ID.jpg</code>, where you replace <code class="language-plaintext highlighter-rouge">ARTICLE_FILE_NAME</code> with the file name you used for the cover image, and <code class="language-plaintext highlighter-rouge">IMAGE_ID</code> with a unique ID for the image - start at 1 for the first image in your article (excluding the cover image). E.g.: <code class="language-plaintext highlighter-rouge">news-article--extra-1.jpg</code>.</p>
 
 <hr />
 
