@@ -33,7 +33,8 @@ Note the requirement for spaces after each of the above items - for example:
 
 <pre><code>### My Heading
 
-* Numbered item</code></pre>
+1. Numbered item
+    * Indented bulleted item</code></pre>
 
 will produce:
 
@@ -42,6 +43,9 @@ will produce:
 
 <ol>
     <li>Numbered item</li>
+    <ul>
+        <li>Indented bulleted item</li>
+    </ul>
 </ol>
 
 </blockquote>
@@ -97,6 +101,7 @@ Some text.
 2. **Numbered item 2**
 * *Bullet 1*
 * Bullet 2
+    1. Numbered item 3
 
 ***Bold & italics***
 
@@ -126,6 +131,9 @@ Will produce:
 <ul>
     <li><i>Bullet 1</i></li>
     <li>Bullet 2</li>
+    <ol>
+        <li>Numbered item 3</li>
+    </ol>
 </ul>
 
 <p><b><i>Bold & italics</i></b></p>
