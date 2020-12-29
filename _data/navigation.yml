@@ -1,0 +1,24 @@
+- title: Blog
+  description: Where I post updates about projects I'm doing.
+  url: https://blog.mgrove.uk
+  icon: pencil
+- title: Reading School BBC Young Reporter
+  description: A site for Reading School's year 8 students to post news articles they have written.
+  url: https://youngreporter.mgrove.uk
+  icon: graduation-cap
+- title: Black Thunder
+  description: Reading School's robotics team, which also runs the school's Robotics Club.
+  url: https://blackthunder.gq
+  icon: bolt
+- title: Photography Feed
+  description: A place for me to post my snaps.
+  url: https://instagram.com/mgrove36.photos
+  icon: camera
+- title: Dogs
+  description: An Instagram account for my dogs.
+  url: https://instagram.com/morganandmeganbichons
+  icon: paw
+- title: Traqua
+  description: "\"An innovative, water-saving solution for the home.\" A small STEM project based around using Raspberry Pis to track and reduce household water usage."
+  url: https://traqua.ml
+  icon: tint
