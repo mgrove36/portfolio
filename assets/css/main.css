@@ -1,5 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
+@import url("https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600");
 /*
 	Industrious by TEMPLATED
 	templated.co @templatedco
@@ -122,8 +123,10 @@ body {
   background-color: var(--background-colour);
   color: var(--text-colour); }
 
+
+
 body, input, select, textarea {
-  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.65; }
@@ -162,6 +165,7 @@ header.special {
     margin-right: auto; }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-weight: 300;
   line-height: 1.5;
   text-transform: uppercase;
