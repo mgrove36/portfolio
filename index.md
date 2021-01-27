@@ -1,6 +1,6 @@
 ---
-title: Demo Site
-description: My demo site - where I host small coding projects and demonstrations.
+title: Portfolio
+description: My portfolio - a repository of all my projects.
 layout: home
 icon: home
 ---
