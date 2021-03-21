@@ -720,10 +720,10 @@ table.alt tbody tr td {
   .highlights > * {
     padding: 1.5rem;
     width: calc(33.3333333333% + 1rem); }
-  .highlights > :nth-child(-n + 3) {
+  /* .highlights > :nth-child(-n + 3) {
     padding-top: 0; }
   .highlights > :nth-last-child(-n + 3) {
-    padding-bottom: 0; }
+    padding-bottom: 0; } */
   .highlights > :nth-child(3n + 1) {
     padding-left: 0; }
   .highlights > :nth-child(3n) {
