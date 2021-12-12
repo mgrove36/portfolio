@@ -2874,3 +2874,18 @@ body.is-menu-visible #menu {
 #cookies p a {
     text-decoration: none;
 }
+
+/* donation */
+.donation-button-container-large {
+	display: flex;
+	flex-direction: row;
+	column-gap: 16px;
+	row-gap: 8px;
+	flex-wrap: wrap;
+	margin-top: 12px;
+}
+
+.donation-button-container-large img {
+	width: 100%;
+	max-width: 210px;
+}
