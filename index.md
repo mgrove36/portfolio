@@ -5,4 +5,4 @@ layout: home
 icon: home
 ---
 
-Got some ideas for me? [Leave them here.](https://goo.gl/forms/qXO1cwSbE4FoQHdq2)
+Got some ideas for me? [Leave them here.](https://s1.mgrove.uk/apps/forms/HkktDJswWy8jdfHi)
