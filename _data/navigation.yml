@@ -14,10 +14,14 @@
   description: A place for me to post my snaps.
   url: https://instagram.com/mgrove36.photos
   icon: camera
-- title: Dogs
-  description: An Instagram account for my dogs.
-  url: https://instagram.com/morganandmeganbichons
-  icon: paw
+- title: Swifts JBC Website
+  description: A website I built for Swifts Junior Badminton Club, including numerous other backend systems for simpler data processing and management.
+  url: https://swiftsjbc.org.uk
+  icon: database
+- title: Parandum
+  description: A vocabulary learning platform built to aid language students.
+  url: https://parandum.mgrove.uk
+  icon: font
 - title: Traqua
   description: "\"An innovative, water-saving solution for the home.\" A small STEM project based around using Raspberry Pis to track and reduce household water usage."
   url: https://traqua.ml
